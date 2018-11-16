@@ -22,14 +22,14 @@ Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unem
 The script for loading the data can be found here: [scripts](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/scripts)
 
 
-**INSERT IMAGE HERE**
+[](/img/load_data.png)
 
 
 ###  Question:
 
 
-The exploratory question that we attempt to answer in this analysis is:  
- *"Is there a difference in unemployment rates of developed countries in different age groups?"*
+The exploratory question that we will attempt to answer in this analysis is:  
+*"Is there a difference in unemployment rates of developed countries in different age groups?"*
  
 
 
