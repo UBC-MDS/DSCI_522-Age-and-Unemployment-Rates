@@ -22,7 +22,7 @@ Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unem
 The script for loading the data can be found here: [scripts](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/scripts)
 
 
-[](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/img/load_data.png)
+![](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/img/load_data.png)
 
 
 ###  Question:
