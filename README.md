@@ -24,16 +24,16 @@ insert image here.
 ###  Question:
 
 OPTION 1:
-The exploratory question that we attempt to answer in this analysis is: 
+The exploratory question that we attempt to answer in this analysis is:   
  “ Is there a relationship between age and the unemployment rate of developed countries from the years 2006-2016. “
 
 OPTION 2:
-The inferential question that we attempt to answer in this analysis is:
+The inferential question that we attempt to answer in this analysis is:  
  *"Is there a difference in unemployment rates in different age groups?"*
  
 OPTION 3: 
 
-*"Does the age group of a country affect it's unemployment rate?
+*"Does the age group of a country affect it's unemployment rate?"*
 
 ### Plan of Action for the Analysis:
 
