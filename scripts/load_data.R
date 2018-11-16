@@ -10,8 +10,8 @@
 main <- function(){
   
   # read in data
-  data <- read.csv('data/GENDER_EMP_15112018225706733.csv')
-  
+  data <- read.csv(url("https://raw.githubusercontent.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/master/data/GENDER_EMP_15112018225706733.csv"))
+  head(data)
 }
 
 # call main function
