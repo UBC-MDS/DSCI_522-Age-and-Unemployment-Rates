@@ -28,7 +28,7 @@ The script for loading the data can be found here: [scripts](https://github.com/
 ###  Question:
 
 
-The inferential question that we attempt to answer in this analysis is:  
+The exploratory question that we attempt to answer in this analysis is:  
  *"Is there a difference in unemployment rates of developed countries in different age groups?"*
  
 
