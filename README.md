@@ -38,7 +38,7 @@ OPTION 3:
 ### Plan of Action for the Analysis:
 
 VERSION 1
-*To conduct this analysis, we plan to look only at observations from developed countries in the past 10 years.  We plan to split the unemployment rates of developed countries into different age groups and see if there is a relationship between the age of individuals and the magnitude of employment rate. 
+To conduct this analysis, we plan to look only at observations from developed countries in the past 10 years.  We plan to split the unemployment rates of developed countries into different age groups and see if there is a relationship between the age of individuals and the magnitude of employment rate. 
 
 VERSION 2
 To conduct this analysis, we plan to look only at observations from developed countries in the past 10 years.  We plan to split the unemployment rates of developed countries into different age groups and see if there is a difference in mean unemployment rate between the age groups. 
@@ -48,7 +48,7 @@ This will require the calculation of mean sums of squares and mean squares error
  
 To answer the hypothesis question “INSERT QUESTION HERE”, we will be using the following Null and Alternate Hypotheses: 
 Null hypothesis ($H_o$): The mean unemployment rates across all age groups are equal. 
-Alternative hypothesis($H_A$): The mean unemployment rates across all age groups are not equal.
+Alternative hypothesis ($H_A$): The mean unemployment rates across all age groups are not equal.
 
 
 ###  Summarize the Data: 
