@@ -1,7 +1,7 @@
 
 # DSCI_522 -  Age and Unemployment Rates
 
-Contributers: 
+Contributors: 
 
 CHIU, CHEUK MAN (github.com ID: [cheukman1207](https://github.com/cheukman1207) )
 
@@ -9,7 +9,7 @@ BOYCE, HAYLEY (github.com ID: [hfboyce](https://github.com/hfboyce) )
 
 ## Proposal:
 
-The relationship between age and unemployment rates 
+The relationship between age and unemployment rates.
 
 
 ### Data set:
@@ -37,8 +37,8 @@ The exploratory question that we will attempt to answer in this analysis is:
 
 To conduct this analysis, we plan to look only at observations from developed countries in the past 10 years.  We plan to split the unemployment rates of developed countries into different age groups and see if there is a difference in mean unemployment rate between the age groups. 
 
-We will be preforming an ANOVA test to test the difference among mean unemployment rates by studying the variation between age groups relative to the variation within the age group. (X = Age group, Y = Unemployment rate)
-This will require the calculation of mean sums of squares and mean squares error which will be use in the calculation of a F statistic. 
+We will be preforming an ANOVA test to check the differences among mean unemployment rates by studying the variation between age groups relative to the variation within the age group. (X = Age group, Y = Unemployment rate)
+This will require the calculations of mean sums of squares and mean squares error which will be use in the calculation of a F statistic. 
  
 To answer the hypothesis question "Is there a difference in unemployment rates of developed countries in different age groups?", we will be using the following null and alternate hypotheses.
   
