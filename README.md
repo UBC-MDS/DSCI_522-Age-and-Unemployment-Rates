@@ -22,7 +22,7 @@ Also can be found in the [data](insert-url-here) directory of this repository.
 The script for loading the data can be found here: [scripts](insert-url-here)
 
 
-**INSERT IMAGE HERE **
+**INSERT IMAGE HERE**
 
 ###  Question:
 
@@ -49,9 +49,10 @@ To conduct this analysis, we plan to look only at observations from developed co
 We will be preforming an ANOVA test to test the difference among mean unemployment rates by studying the variation between age groups relative to the variation within the age group. (X = Age group, Y = Unemployment rate)
 This will require the calculation of mean sums of squares and mean squares error which will be use in the calculation of a F statistic. 
  
-To answer the hypothesis question “INSERT QUESTION HERE”, we will be using the following Null and Alternate Hypotheses: 
-Null hypothesis ($H_o$): The mean unemployment rates across all age groups are equal. 
-Alternative hypothesis ($H_A$): The mean unemployment rates across all age groups are not equal.
+To answer the hypothesis question “INSERT QUESTION HERE”, we will be using the following Null and Alternate Hypotheses.
+  
+Null hypothesis: The mean unemployment rates across all age groups are equal.     
+Alternative hypothesis: The mean unemployment rates across all age groups are not equal.    
 
 
 ###  Summarize the Data: 
