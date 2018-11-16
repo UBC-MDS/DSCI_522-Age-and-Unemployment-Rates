@@ -14,42 +14,33 @@ The relationship between age and unemployment rates
 
 ### Data set:
 
-Dataset: [Employment: Unemployment rate, by sex and age group](https://stats.oecd.org/index.aspx?queryid=54743) by OECD.org.   
-Also can be found in the [data](insert-url-here) directory of this repository. 
+Dataset: [Employment: Unemployment rate by sex and age group](https://stats.oecd.org/index.aspx?queryid=54743) by OECD.org.   
+Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/data) directory of this repository. 
 
 ### Loading the data: 
 
-The script for loading the data can be found here: [scripts](insert-url-here)
+The script for loading the data can be found here: [scripts](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/scripts)
 
 
 **INSERT IMAGE HERE**
 
+
 ###  Question:
 
-OPTION 1:  
-The exploratory question that we attempt to answer in this analysis is:   
- “ Is there a relationship between age and the unemployment rate of developed countries from the years 2006-2016. “
 
-OPTION 2:  
 The inferential question that we attempt to answer in this analysis is:  
- *"Is there a difference in unemployment rates in different age groups?"*
+ *"Is there a difference in unemployment rates of developed countries in different age groups?"*
  
-OPTION 3:   
 
-*"Does the age group of a country affect it's unemployment rate?"*
 
 ### Plan of Action for the Analysis:
 
-VERSION 1
-To conduct this analysis, we plan to look only at observations from developed countries in the past 10 years.  We plan to split the unemployment rates of developed countries into different age groups and see if there is a relationship between the age of individuals and the magnitude of employment rate. 
-
-VERSION 2
 To conduct this analysis, we plan to look only at observations from developed countries in the past 10 years.  We plan to split the unemployment rates of developed countries into different age groups and see if there is a difference in mean unemployment rate between the age groups. 
 
 We will be preforming an ANOVA test to test the difference among mean unemployment rates by studying the variation between age groups relative to the variation within the age group. (X = Age group, Y = Unemployment rate)
 This will require the calculation of mean sums of squares and mean squares error which will be use in the calculation of a F statistic. 
  
-To answer the hypothesis question “INSERT QUESTION HERE”, we will be using the following Null and Alternate Hypotheses.
+To answer the hypothesis question "Is there a difference in unemployment rates of developed countries in different age groups?", we will be using the following null and alternate hypotheses.
   
 Null hypothesis: The mean unemployment rates across all age groups are equal.     
 Alternative hypothesis: The mean unemployment rates across all age groups are not equal.    
