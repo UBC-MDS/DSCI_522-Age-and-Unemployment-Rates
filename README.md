@@ -19,19 +19,22 @@ also in the [data](insert-url-here) directory of this repository.
 
 ### Loading the data: 
 
-insert image here. 
+The script for loading the data can be found here [scripts](insert-url-here)
+
+
+**INSERT IMAGE HERE **
 
 ###  Question:
 
-OPTION 1:
+OPTION 1:  
 The exploratory question that we attempt to answer in this analysis is:   
  “ Is there a relationship between age and the unemployment rate of developed countries from the years 2006-2016. “
 
-OPTION 2:
+OPTION 2:  
 The inferential question that we attempt to answer in this analysis is:  
  *"Is there a difference in unemployment rates in different age groups?"*
  
-OPTION 3: 
+OPTION 3:   
 
 *"Does the age group of a country affect it's unemployment rate?"*
 
