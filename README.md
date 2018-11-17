@@ -43,13 +43,15 @@ This will require the calculations of mean sums of squares and mean squares erro
 To answer the hypothesis question *"Is there a difference in unemployment rates of developed countries in different age groups?"*, we will be using the following null and alternate hypotheses.
   
 Null hypothesis: The mean unemployment rates across all age groups are equal.     
-Alternative hypothesis: The mean unemployment rates across all age groups are not equal.    
+Alternative hypothesis: The mean unemployment rates across all age groups are not equal. 
+
+If the ANOVA indicate a value lower than our critical value (0.05) we will have to do additional testing to determine which age groups do not equal. 
 
 
 ###  Summarize the Data: 
 
 I expect to summarize our results using the ANOVA table as well as an addition table explaining the outcomes. 
-To help explain our conclusions, a violin plot with overlaying jitter should give a good idea on the quantity of data we have, the median and a confidence interval. 
+To help explain our conclusions, a violin plot with overlaying jitter should give a good idea on the quantity of data we have for each age group. An additional graph (line or point) showing the direct relationship age has on the umemployment rate would also be considered in the final report. 
 
 
 
