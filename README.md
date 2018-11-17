@@ -19,7 +19,7 @@ Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unem
 
 ### Loading the data: 
 
-The script for loading the data can be found here: [scripts](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/scripts)
+The script for loading the data can be found here: [scripts](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/src)
 
 
 ![](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/img/load_data.png)
@@ -40,7 +40,7 @@ To conduct this analysis, we plan to look only at observations from developed co
 We will be preforming an ANOVA test to check the differences among mean unemployment rates by studying the variation between age groups relative to the variation within the age group. (X = Age group, Y = Unemployment rate)
 This will require the calculations of mean sums of squares and mean squares error which will be use in the calculation of a F statistic. 
  
-To answer the hypothesis question "Is there a difference in unemployment rates of developed countries in different age groups?", we will be using the following null and alternate hypotheses.
+To answer the hypothesis question *"Is there a difference in unemployment rates of developed countries in different age groups?"*, we will be using the following null and alternate hypotheses.
   
 Null hypothesis: The mean unemployment rates across all age groups are equal.     
 Alternative hypothesis: The mean unemployment rates across all age groups are not equal.    
@@ -48,7 +48,7 @@ Alternative hypothesis: The mean unemployment rates across all age groups are no
 
 ###  Summarize the Data: 
 
-I expect to summarize our results using the ANOVA table as well as an addition explaining the outcomes. 
+I expect to summarize our results using the ANOVA table as well as an addition table explaining the outcomes. 
 To help explain our conclusions, a violin plot with overlaying jitter should give a good idea on the quantity of data we have, the median and a confidence interval. 
 
 
