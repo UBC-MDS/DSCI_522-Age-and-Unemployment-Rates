@@ -45,7 +45,7 @@ To answer the hypothesis question *"Is there a difference in unemployment rates 
 Null hypothesis: The mean unemployment rates across all age groups are equal.     
 Alternative hypothesis: The mean unemployment rates across all age groups are not equal. 
 
-If the ANOVA indicate a value lower than our critical value (0.05) we will have to do additional testing to determine which age groups do not equal. 
+If the ANOVA indicates a value lower than our critical value (0.05) we will have to do additional testing to determine which age groups do not equal. 
 
 
 ###  Summarize the Data: 
