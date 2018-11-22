@@ -22,20 +22,31 @@ out <- args[2]
 main <- function(){
   
 # read in data
-data <- read.csv(input_file)
-print(head(data))
+  clean_unemployment <- read.csv(input_file)
+
 
 # cleaned to combine Male and Female and filtered out the unnecessary columns
-clean_unemployment <- data %>% select(COU, Country, Age.Group, Time, Sex, Value) %>%
-  group_by(Country, Time, Age.Group) %>%
-  spread (Sex, Value) %>% 
-  arrange(Country, Time, Age.Group) %>%
-  mutate(unemployment_rate = 0.5*Women + 0.5*Men) %>%
-  filter( Age.Group == "15-24" | Age.Group=="25-54"| Age.Group=="55-64")
+  young <- clean_unemployment %>% filter (Age.Group == "15-24")
+  med <- clean_unemployment %>% filter (Age.Group == "25-54")
+  old <- clean_unemployment %>% filter (Age.Group == "55-64")
+  
+  model  <- broom::tidy(aov(Value ~ Age.Group, data=clean_unemployment))
+  model
+  age_aov_p <-  model$p.value[1]
+  age_aov_F <- model$statistic[1]
+  age_aov_df  <- model$df
+  cat("p-value:\n")
+  print(age_aov_p)
+  cat("\nDegrees of freedom:\n")
+  print(age_aov_df)
+  cat("\nTest statistic:\n")
+  print(age_aov_F)
+
 
 
 #Write new CSV
-write.csv(clean_unemployment, out)
+write.csv(model, out)
+
 }
 
 # call main function
