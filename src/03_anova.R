@@ -8,24 +8,17 @@
 # This script takes 2 arguments: one taking the raw data and the  other naming  the newly created CSV
 # 
 # Usage: Rscript clean_data.R
-
-
 library(tidyverse)
-
 # read in command line arguments
 args <- commandArgs(trailingOnly = TRUE)
 input_file <- args[1]
 out <- args[2]
-
-
 # define main function
 main <- function(){
   
-# read in data
+  # read in data
   clean_unemployment <- read.csv(input_file)
-
-
-# cleaned to combine Male and Female and filtered out the unnecessary columns
+  # cleaned to combine Male and Female and filtered out the unnecessary columns
   young <- clean_unemployment %>% filter (Age.Group == "15-24")
   med <- clean_unemployment %>% filter (Age.Group == "25-54")
   old <- clean_unemployment %>% filter (Age.Group == "55-64")
@@ -41,13 +34,10 @@ main <- function(){
   print(age_aov_df)
   cat("\nTest statistic:\n")
   print(age_aov_F)
-
-
-
-#Write new CSV
-write.csv(model, out)
-
+  #Write new CSV
+  write.csv(model, out)
 }
-
 # call main function
 main()
+
+
