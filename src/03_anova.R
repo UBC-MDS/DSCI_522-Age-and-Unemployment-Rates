@@ -1,32 +1,40 @@
 #! /usr/bin/env Rscript 
 # 03_anova.R
-# Hayley Boyce, Nov 2018
+# Hayley Boyce
 # Simon Chiu
+# November 22, 2018
 #
-# This script takes the clean dataset in the data directory and performs ANOVA tests on the `Age.Group` values. 
+# PURPOSE: This script takes the clean dataset in the data directory and performs ANOVA tests on the `Age.Group` values. 
 # 
-# This script takes 2 arguments: one taking the raw data and the other names the newly created anova table.
+# METHOD: This script takes 2 arguments: one taking the clean data (unemployment-age-gender_countries_filtered_clean.csv) file made fromm script 
+# 01_clean-data.R and the other names the newly created ANOVA table.
 # 
-# Usage: Rscript 03_anova.R
+# USAGE: Rscript 03_anova.R
+# 
+# RECOMMENDED: bash Rscript src/03_anova.R  "data/unemployment-age-gender_countries_filtered_clean.csv" "anova-table.csv"
 
 library(tidyverse)
-# read in command line arguments
+
+
+# Read in command line arguments
 args <- commandArgs(trailingOnly = TRUE)
 input_file <- args[1]
 out <- args[2]
-# define main function
+
+# Define main function
 main <- function(){
   
-  # read in data
+  # Read in data
   clean_unemployment <- read.csv(input_file)
   
-  #makes new variables for the age groups and estimate the SS
+  # Makes new variables for the age groups
   young <- clean_unemployment %>% filter (Age.Group == "15-24")
   med <- clean_unemployment %>% filter (Age.Group == "25-54")
   old <- clean_unemployment %>% filter (Age.Group == "55-64")
 
-  # this provides an estimate of the  test statistic.
-  var_total  <-var(clean_unemployment$Value)
+  # This provides an estimate of the  test statistic. Not reported, but still useful. 
+ 
+   var_total  <-var(clean_unemployment$Value)
   var_group  <- (var(young$Value)+var(med$Value) + (var(old$Value)))/3
   my_ratio <- (var_total/var_group)
   print(var_total)
@@ -34,22 +42,20 @@ main <- function(){
   print(my_ratio)
   
   
-  #the actual calculation of the test statistic and p-value using tidy and aov   
+  # the actual calculation of the test statistic and p-value using tidy and aov   
+  
   model  <- broom::tidy(aov(Value ~ Age.Group, data=clean_unemployment))
   model
   age_aov_p <-  model$p.value[1]
   age_aov_F <- model$statistic[1]
   age_aov_df  <- model$df
-  cat("p-value:\n")
-  print(age_aov_p)
-  cat("\nDegrees of freedom:\n")
-  print(age_aov_df)
-  cat("\nTest statistic:\n")
-  print(age_aov_F)
-  #Write new CSV
+  
+
+  # Write new CSV
   write.csv(model, out)
 }
-# call main function
+
+# Call main function
 main()
 
 
