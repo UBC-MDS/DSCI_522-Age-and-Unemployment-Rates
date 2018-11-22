@@ -20,12 +20,21 @@ main <- function(){
   # read in data
   clean_unemployment <- read.csv(input_file)
   
-  #makes new variables for the age groups
+  #makes new variables for the age groups and estimate the SS
   young <- clean_unemployment %>% filter (Age.Group == "15-24")
   med <- clean_unemployment %>% filter (Age.Group == "25-54")
   old <- clean_unemployment %>% filter (Age.Group == "55-64")
 
-  #using tidy and aov   
+  # this provides an estimate of the  test statistic.
+  var_total  <-var(clean_unemployment$Value)
+  var_group  <- (var(young$Value)+var(med$Value) + (var(old$Value)))/3
+  my_ratio <- (var_total/var_group)
+  print(var_total)
+  print(var_group)
+  print(my_ratio)
+  
+  
+  #the actual calculation of the test statistic and p-value using tidy and aov   
   model  <- broom::tidy(aov(Value ~ Age.Group, data=clean_unemployment))
   model
   age_aov_p <-  model$p.value[1]
