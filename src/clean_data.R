@@ -30,7 +30,7 @@ clean_unemployment <- data %>% select(COU, Country, Age.Group, Time, Sex, Value)
   group_by(Country, Time, Age.Group) %>%
   spread (Sex, Value) %>% 
   arrange(Country, Time, Age.Group) %>%
-  mutate(unemployment_rate = sum(Women, Men)) %>%
+  mutate(unemployment_rate = 0.5*Women + 0.5*Men) %>%
   filter( Age.Group == "15-24" | Age.Group=="25-54"| Age.Group=="55-64")
 
 
