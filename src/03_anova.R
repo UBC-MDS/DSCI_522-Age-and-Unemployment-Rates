@@ -1,13 +1,14 @@
 #! /usr/bin/env Rscript 
-# clean_data.R
+# 03_anova.R
 # Hayley Boyce, Nov 2018
 # Simon Chiu
 #
-# This script takes the dataset in the data directory and will clean  and filter it. 
+# This script takes the clean dataset in the data directory and performs ANOVA tests on the `Age.Group` values. 
 # 
-# This script takes 2 arguments: one taking the raw data and the  other naming  the newly created CSV
+# This script takes 2 arguments: one taking the raw data and the other names the newly created anova table.
 # 
-# Usage: Rscript clean_data.R
+# Usage: Rscript 03_anova.R
+
 library(tidyverse)
 # read in command line arguments
 args <- commandArgs(trailingOnly = TRUE)
@@ -18,11 +19,13 @@ main <- function(){
   
   # read in data
   clean_unemployment <- read.csv(input_file)
-  # cleaned to combine Male and Female and filtered out the unnecessary columns
+  
+  #makes new variables for the age groups
   young <- clean_unemployment %>% filter (Age.Group == "15-24")
   med <- clean_unemployment %>% filter (Age.Group == "25-54")
   old <- clean_unemployment %>% filter (Age.Group == "55-64")
-  
+
+  #using tidy and aov   
   model  <- broom::tidy(aov(Value ~ Age.Group, data=clean_unemployment))
   model
   age_aov_p <-  model$p.value[1]
