@@ -1,5 +1,5 @@
 
-# DSCI_522 -  Age and Unemployment Rates
+# Age and Unemployment Rates
 
 Contributors: 
 
@@ -37,21 +37,21 @@ The exploratory question that we will attempt to answer in this analysis is:
 
 To conduct this analysis, we plan to look only at observations from developed countries in the past 10 years.  We plan to split the unemployment rates of developed countries into different age groups and see if there is a difference in mean unemployment rate between the age groups. 
 
-We will be preforming an ANOVA test to check the differences among mean unemployment rates by studying the variation between age groups relative to the variation within the age group. (X = Age group, Y = Unemployment rate)
-This will require the calculations of mean sums of squares and mean squares error which will be use in the calculation of a F statistic. 
+We will be performing an ANOVA test to check the differences among mean unemployment rates by studying the variation between age groups relative to the variation within the age group. (X = Age group, Y = Unemployment rate)
+This will require the calculations of mean sums of squares and mean squares error which will be used in the calculation of a F statistic. 
  
 To answer the hypothesis question *"Is there a difference in unemployment rates of developed countries in different age groups?"*, we will be using the following null and alternate hypotheses.
   
 Null hypothesis: The mean unemployment rates across all age groups are equal.     
 Alternative hypothesis: The mean unemployment rates across all age groups are not equal. 
 
-If the ANOVA indicates a value lower than our critical value (0.05) we will have to do additional testing to determine which age groups do not equal. 
+If the ANOVA indicates a p-value lower than our critical value (0.05) we will do additional testing to determine which age groups do not equal. 
 
 
 ###  Summarize the Data: 
 
-I expect to summarize our results using the ANOVA table as well as an addition table explaining the outcomes. 
-To help explain our conclusions, a violin plot with overlaying jitter should give a good idea on the quantity of data we have for each age group. An additional graph (line or point) showing the direct relationship age has on the umemployment rate would also be considered in the final report. 
+I expect to summarize our results using the ANOVA table as well as some additional pairwise t-tests in order to explain the outcomes. 
+To help explain our conclusions, a violin plot with overlaying jitter should give a good idea on the quantity of data we have for each age group. An additional graph (line or point) showing the direct relationship age has on the unemployment rate would also be considered in the final report. 
 
 
 
