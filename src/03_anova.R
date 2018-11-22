@@ -1,11 +1,11 @@
 #! /usr/bin/env Rscript 
-# clean_data.R
+# 03_anova.R
 # Hayley Boyce, Nov 2018
 # Simon Chiu
 #
-# This script takes the clean dataset in the data directory and performs ANOVA tests on the `Age.Group`` values. 
+# This script takes the clean dataset in the data directory and performs ANOVA tests on the `Age.Group` values. 
 # 
-# This script takes 2 arguments: one taking the raw data and the other names  the newly created anova table 
+# This script takes 2 arguments: one taking the raw data and the other names the newly created anova table.
 # 
 # Usage: Rscript 03_anova.R
 
