@@ -11,11 +11,9 @@
 # 
 # USAGE: Rscript 03_anova.R
 # 
-<<<<<<< HEAD
+
 # RECOMMENDED: bash Rscript src/03_anova.R  "data/unemployment-age-gender_countries_filtered_clean.csv" "results/anova-table.csv"
-=======
-# RECOMMENDED: bash Rscript src/03_anova.R  "data/unemployment-age-gender-countries-filtered-clean.csv" "anova-table.csv"
->>>>>>> upstream/master
+
 
 library(tidyverse)
 
