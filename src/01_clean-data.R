@@ -40,7 +40,7 @@ clean_unemployment <- data %>% select(COU, Country, Age.Group, Time, Sex, Value)
   filter(!(Country %in% excluding_countries))
 
 #Write new CSV
-write.csv(clean_unemployment, out)
+write.csv(clean_unemployment, out, row.names=FALSE)
 }
 
 # call main function

@@ -11,7 +11,11 @@
 # 
 # USAGE: Rscript 03_anova.R
 # 
+<<<<<<< HEAD
+# RECOMMENDED: bash Rscript src/03_anova.R  "data/unemployment-age-gender_countries_filtered_clean.csv" "results/anova-table.csv"
+=======
 # RECOMMENDED: bash Rscript src/03_anova.R  "data/unemployment-age-gender-countries-filtered-clean.csv" "anova-table.csv"
+>>>>>>> upstream/master
 
 library(tidyverse)
 
@@ -37,10 +41,7 @@ main <- function(){
    var_total  <-var(clean_unemployment$Value)
   var_group  <- (var(young$Value)+var(med$Value) + (var(old$Value)))/3
   my_ratio <- (var_total/var_group)
-  print(var_total)
-  print(var_group)
-  print(my_ratio)
-  
+
   
   # the actual calculation of the test statistic and p-value using tidy and aov   
   
@@ -52,7 +53,7 @@ main <- function(){
   
 
   # Write new CSV
-  write.csv(model, out)
+  write.csv(model, out,row.names=FALSE)
 }
 
 # Call main function
