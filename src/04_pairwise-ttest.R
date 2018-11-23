@@ -12,7 +12,11 @@
 # 
 # USAGE: Rscript 04_pairwise-ttest.R
 #
+<<<<<<< HEAD
 # RECOMMENDED:  bash Rscript src/04_pairwise-ttest.R  "data/unemployment-age-gender_countries_filtered_clean.csv" "results/pairwise-test-table.csv"
+=======
+# RECOMMENDED:   bash Rscript src/04_pairwise-ttest.R  "data/unemployment-age-gender-countries-filtered-clean.csv" "pairwise-test-table.csv"
+>>>>>>> upstream/master
 
 
 library(tidyverse)

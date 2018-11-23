@@ -10,7 +10,7 @@
 # 
 # USAGE: Rscript 01_clean-data.R
 #
-# RECOMMENDED:  bash Rscript src/01_clean-data.R "data/unemployment-age-gender.csv" "data/unemployment-age-gender_countries_filtered_clean.csv"
+# RECOMMENDED:  bash Rscript src/01_clean-data.R "data/unemployment-age-gender.csv" "data/unemployment-age-gender-countries-filtered-clean.csv"
 
 
 library(tidyverse)

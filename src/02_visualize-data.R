@@ -2,13 +2,16 @@
 # 02_visualize_data.R
 # Hayley Boyce
 # Simon Chiu
-# Nov 2018
+# November 22, 2018
+
+# PURPOSE: This script takes the clean dataset and creates exploratory visualizations for target audiences. 
+# 
+# METHOD:  This script takes 2 arguments: one taking the clean data and the other naming the directory for the newly created figures
+# 
+# USAGE: Rscript 02_visualize_data.R
 #
-# This script takes the clean dataset and creates an exploratory visualization for target audiences. 
-# 
-# This script takes 2 arguments: one taking the clean data and the other naming the directory the newly created figure
-# 
-# Usage: Rscript 02_visualize_data.R
+# RECOMMENDED:  bash Rscript src/02_visualize_data.R "data/unemployment-age-gender-countries-filtered-clean.csv" "img/"
+
 
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(ggplot2))
