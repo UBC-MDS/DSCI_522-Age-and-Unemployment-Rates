@@ -11,7 +11,6 @@
 # 
 # USAGE: Rscript 03_anova.R
 # 
-
 # RECOMMENDED: bash Rscript src/03_anova.R  "data/unemployment-age-gender_countries_filtered_clean.csv" "results/anova-table.csv"
 
 
