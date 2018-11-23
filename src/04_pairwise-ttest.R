@@ -46,11 +46,10 @@ main <- function(){
   #the actual calculation of the test statistic and p-value using tidy and pairwise.t.test - Since we are using alternative ="two.sided" 
   #if the p > 0.05 then we fail to reject the null hypothesis that  The mean unemployment rates across the age groups are equal.
   
-  pairwise_test <- broom::tidy(pairwise.t.test(x=clean_unemployment$Value, g=clean_unemployment$Age.Group, p.adjust.method = "none", alternative ="two.sided"))
-  pairwise_test <- pairwise_test %>% mutate (reject_H0 = if_else(p.value>0.05, FALSE, TRUE))
+  pairwise_test <- broom::tidy(pairwise.t.test(x=clean_unemployment$Value, g=clean_unemployment$Age.Group, p.adjust.method = "none", alternative ="two.sided")) %>% 
+    mutate (reject_H0 = if_else(p.value>0.05, FALSE, TRUE))
   
-  pairwise_test
-  
+
   #changed the column names 
   colnames(pairwise_test)[colnames(pairwise_test)=="group1"] <- "Age.group.1"
   colnames(pairwise_test)[colnames(pairwise_test)=="group2"] <- "Age.group.2"  
