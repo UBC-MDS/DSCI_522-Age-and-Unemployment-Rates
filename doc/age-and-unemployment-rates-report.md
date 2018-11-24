@@ -27,12 +27,52 @@ Our dataset “Employment: Unemployment rate by sex and age group” was obtaine
     ## 5 AUS Australia     55-64 2012   Men   3.7
     ## 6 AUS Australia     55-64 2012 Women   3.1
 
-The values of unemployment rates for different countries, gender and year differed substantially with a maximum value of 63.8% and a minimum of 0%. The mean unemployment rate of the entire data is 11.09% with a median of 7.75%. This can be seen more directly in the histogram below.
+The values of unemployment rates for the different age group vary substantially in distribution. The maximum and minimum unemployment rate of age group 15-24 is 63.8% and 4.5% respectively, with a median unemployment rate of 16.55%. The age group 25-54 has a maximum unemployment of 30.9% a minimum rate of 2.2 with a median of 6.05%. The last age group 55-64 has maximum and minimum values of 20.4% and 0% respectively with a median unemployment rate of 5.4%. This can be seen more directly in the histogram below
 
 ###### Figure 1: histograms of age group unemployment rates
 
-![](age-and-unemployment-rates-report_files/figure-markdown_github/unnamed-chunk-1-1.png)
+![](../img/histrogram.png)
+
+To see how much the rates differ in comparison to each individual age group the violin jitter plot is provided below.
 
 ###### Figure 2: Violin with Overlaying Jitter plots
 
 <img src="../img/violin.png" width="600"  "height="600" />
+
+Analysis
+--------
+
+To begin the analysis we first must perform ANOVA to answer our hypothesis question "Is there a difference in mean unemployment rates of developed countries in different age groups?". For this test, our 2 hypotheses are as follows:
+
+Null hypothesis: The mean unemployment rates across all age groups are equal.
+Alternative hypothesis: The mean unemployment rates across all age groups are not equal.
+
+ANOVA produced the following results:
+
+###### Table 2: ANOVA results for Age Group and unemployment rates.
+
+    ##        term   df    sumsq      meansq statistic       p.value
+    ## 1 Age.Group    2 34289.67 17144.83395  297.7235 1.645731e-102
+    ## 2 Residuals 1017 58565.40    57.58644        NA            NA
+
+The table shows a p-value of 1.645731e-102 and using a critical value of 0.05 this shows strong evidence to reject the null hypothesis. This produces the conclusion that all three age groups mean unemployment rate are not equal. Although successful in nature, this conclusion does not exactly answer what age group differs and we must perform further analysis to discover exactly which of the three groups differ from one another. This leads us to pair-wise t-testing. In order to find which age group's mean unemployment rate statistically differ, each pair of age groups must be compared using a t-test and new individual hypotheses.
+
+Null hypothesis: Age group 1 and age group 2 have equal mean unemployment rates.
+Alternative hypothesis: Age group 1 and age group 2 do not have equal mean unemployment rates.
+
+Evaluating the confidence interval of each group, it is evidence there is little to no overlap between the groups as displayed in figure 3.
+
+###### Figure 3: Confidence Intervals of Mean Unemployment Rates of the 3 Age Groups.
+
+<img src="../img/mean_CI.png" width="600"  "height="600" />
+
+Performing 3 separate tests produced the values in Table 3.
+
+###### Table 3: Pair-wise T-Test for Each Pair of Age Groups.
+
+    ##   Age.group.1 Age.group.2      p.value reject_H0
+    ## 1       25-54       15-24 4.741416e-75      TRUE
+    ## 2       55-64       15-24 6.115144e-89      TRUE
+    ## 3       55-64       25-54 2.967114e-02      TRUE
+
+The table above shows that all three t-tests produced p values that are lower than the critical value of 0.05, giving sufficient evidence to reject all 3 null hypotheses. This translates that all three age groups have statistically different mean unemployment rates from one another.
