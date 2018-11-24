@@ -29,32 +29,25 @@ main <- function(){
   clean_unemployment <- read.csv(input_file)
   
   #makes new variables for the age groups
-  young <- clean_unemployment %>% filter (Age.Group == "15-24")
-  med <- clean_unemployment %>% filter (Age.Group == "25-54")
-  old <- clean_unemployment %>% filter (Age.Group == "55-64")
+  #young <- clean_unemployment %>% filter (Age.Group == "15-24")
+  #med <- clean_unemployment %>% filter (Age.Group == "25-54")
+  #old <- clean_unemployment %>% filter (Age.Group == "55-64")
   
-  young_histo <- generate_histro(young)
-  
-  med_histo <- generate_histro(med)
-  
-  old_histo <- generate_histro(old)
+  histo <- generate_histro(clean_unemployment)
   
   violin <- generate_violin(clean_unemployment)
   
   mean_CI_plot <- generate_CI_plot(clean_unemployment)
   
   #Save the charts
-  ggsave("young_histrogram.png", plot = young_histo, path = out_pic_dir,
-         width = 6, height = 6)
-  ggsave("med_histrogram.png", plot = med_histo, path = out_pic_dir,
-         width = 6, height = 6)
-  ggsave("old_histrogram.png", plot = old_histo, path = out_pic_dir,
-         width = 6, height = 6)
+  ggsave("histrogram.png", plot = histo, path = out_pic_dir,
+         width = 6, height = 4)
   
   ggsave("violin.png", plot = violin, path = out_pic_dir,
-         width = 6, height = 6)
+         width = 4.5, height = 4.5)
+  
   ggsave("mean_CI.png", plot = mean_CI_plot, path = out_pic_dir,
-         width = 6, height = 6)
+         width = 4.5, height = 4.5)
 }
 
 # define the histrogram plot object making function
@@ -62,12 +55,18 @@ generate_histro <- function(dataset){
   
   chart <- dataset %>%
     ggplot(aes(x = Value)) + 
-    geom_histogram(bins = 40, color = "white", fill = "turquoise" ) +
+    geom_histogram(bins = 20, color = "white", fill = "turquoise" ) +
     xlim(0, 70) +
     #ylim(0, 420) +
     xlab("Unemployment Rate (%)") + 
     ylab("Number of Observation") +
-    ggtitle("The Distribution of Unemployment Rates")
+    ggtitle("The Distribution of Unemployment Rates by Age Group") + 
+    theme_bw() +
+    theme(panel.background = element_rect(fill = "white", colour = "white"),  
+    strip.background =element_rect(fill="white"),
+    plot.title = element_text(size = 13, face = "bold"),
+    strip.text = element_text(size = 11, face = "bold")) +
+    facet_grid(. ~ Age.Group)
   
   return (chart)
 
