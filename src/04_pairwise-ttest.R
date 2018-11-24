@@ -13,7 +13,7 @@
 # USAGE: Rscript 04_pairwise-ttest.R
 #
 
-# RECOMMENDED:  bash Rscript src/04_pairwise-ttest.R  "data/unemployment-age-gender_countries_filtered_clean.csv" "results/pairwise-test-table.csv"
+# RECOMMENDED:  bash Rscript src/04_pairwise-ttest.R  "data/unemployment-age-gender-countries-filtered-clean.csv" "results/pairwise-test-table.csv"
 
 library(tidyverse)
 
@@ -59,7 +59,7 @@ main <- function(){
   
   # Write new CSV  
   write.csv(rate_estimate, "results/estimate-table.csv",row.names=FALSE)
-  write.csv(pairwise_test, out)
+  write.csv(pairwise_test, out,row.names=FALSE )
 }
 # call main function
 main()
