@@ -112,7 +112,7 @@ generate_CI_plot <- function(dataset){
     xlab("Age Group") + 
     ylab("Average Unemployment Rate (%)") +
     ggtitle("95% Confidence Intervals of the Average Unemployment Rates") +
-    theme(plot.title = element_text(size = 11, face = "bold"))
+    theme(plot.title = element_text(size = 9, face = "bold"))
   
   return (chart)
 }
