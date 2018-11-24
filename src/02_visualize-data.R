@@ -29,27 +29,27 @@ main <- function(){
   clean_unemployment <- read.csv(input_file)
   
   #makes new variables for the age groups
-  #young <- clean_unemployment %>% filter (Age.Group == "15-24")
-  #med <- clean_unemployment %>% filter (Age.Group == "25-54")
-  #old <- clean_unemployment %>% filter (Age.Group == "55-64")
+  young <- clean_unemployment %>% filter (Age.Group == "15-24")
+  med <- clean_unemployment %>% filter (Age.Group == "25-54")
+  old <- clean_unemployment %>% filter (Age.Group == "55-64")
   
-  #young_histo <- generate_histro(young)
+  young_histo <- generate_histro(young)
   
-  #med_histo <- generate_histro(med)
+  med_histo <- generate_histro(med)
   
-  #old_histo <- generate_histro(old)
+  old_histo <- generate_histro(old)
   
   violin <- generate_violin(clean_unemployment)
   
   mean_CI_plot <- generate_CI_plot(clean_unemployment)
   
   #Save the charts
-  #ggsave("young_histrogram.png", plot = young_histo, path = out_pic_dir,
-  #       width = 6, height = 6)
-  #ggsave("med_histrogram.png", plot = med_histo, path = out_pic_dir,
-  #       width = 6, height = 6)
-  #ggsave("old_histrogram.png", plot = old_histo, path = out_pic_dir,
-  #       width = 6, height = 6)
+  ggsave("young_histrogram.png", plot = young_histo, path = out_pic_dir,
+         width = 6, height = 6)
+  ggsave("med_histrogram.png", plot = med_histo, path = out_pic_dir,
+         width = 6, height = 6)
+  ggsave("old_histrogram.png", plot = old_histo, path = out_pic_dir,
+         width = 6, height = 6)
   
   ggsave("violin.png", plot = violin, path = out_pic_dir,
          width = 6, height = 6)
