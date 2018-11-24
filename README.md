@@ -30,8 +30,8 @@ Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"
 
 ## Dependencies:
 
-•    R & R libraries:
-o    rmarkdown
-o    knit
-o    tidyverse
-o    ggplot2
+•    R & R libraries:  
+o    rmarkdown  
+o    knit  
+o    tidyverse  
+o    ggplot2  
