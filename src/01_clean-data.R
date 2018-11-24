@@ -36,7 +36,7 @@ excluding_countries = c("Brazil", "Russia", "Mexico", "India", "Indonesia", "Sou
 # cleaned toselect only the necessary columns and filtered out the 2 unnecessary age groups 
 clean_unemployment <- data %>% select(COU, Country, Age.Group, Time, Sex, Value) %>%
   arrange(Country, Time, Age.Group) %>%
-  filter( Age.Group == "15-24" | Age.Group=="25-54"| Age.Group=="55-64") %>%
+  filter( Age.Group == "15-24" | Age.Group=="25-54"| Age.Group=="55-64", Time >= '2012') %>%
   filter(!(Country %in% excluding_countries))
 
 #Write new CSV
