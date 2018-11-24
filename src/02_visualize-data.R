@@ -1,16 +1,16 @@
 #! /usr/bin/env Rscript 
-# 02_visualize_data.R
+# 02_visualize-data.R
 # Hayley Boyce
 # Simon Chiu
 # November 22, 2018
 
 # PURPOSE: This script takes the clean dataset and creates exploratory visualizations for target audiences. 
 # 
-# METHOD:  This script takes 2 arguments: one taking the clean data and the other naming the directory for the newly created figures
+# METHOD:  This script takes 2 arguments: one taking the clean data (unemployment-age-gender-countries-filtered-clean.csv) and the other naming the directory for the newly created figures
 # 
-# USAGE: Rscript 02_visualize_data.R
+# USAGE: Rscript 02_visualize-data.R
 #
-# RECOMMENDED:  bash Rscript src/02_visualize_data.R "data/unemployment-age-gender-countries-filtered-clean.csv" "img/"
+# RECOMMENDED:  bash Rscript src/02_visualize-data.R "data/unemployment-age-gender-countries-filtered-clean.csv" "img/"
 
 
 suppressPackageStartupMessages(library(tidyverse))

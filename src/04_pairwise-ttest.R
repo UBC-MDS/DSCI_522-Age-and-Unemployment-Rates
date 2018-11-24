@@ -7,7 +7,7 @@
 # PURPOSE: This script takes the clean dataset in the data directory and performs 3 pairwise t-tests on the `Age.Group` values to see exactly
 # which age groups differs from each other.
 # 
-# METHOD: This script takes 2 arguments: one taking the clean data (unemployment-age-gender_countries_filtered_clean.csv) file made fromm script 
+# METHOD: This script takes 2 arguments: one taking the clean data (unemployment-age-gender-countries-filtered-clean.csv") file made fromm script 
 # 01_clean-data.R and the other names the newly created pairwise t-test table with conclusions if we reject or fail to reject the null hypothesis.
 # 
 # USAGE: Rscript 04_pairwise-ttest.R
