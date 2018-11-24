@@ -9,7 +9,7 @@ BOYCE, HAYLEY (github.com ID: [hfboyce](https://github.com/hfboyce) )
 
 ## Overview:
 
-We want to know if an individual's age has a significant effect on getting employed. In order to expand on that question, in this project, we studied the relationship between age groups and unemployment rates in developed countries in the past 5 years. The exploratory question that we will attempt to answer in this analysis is *"In the past 5 years, is there a difference in the unemployment rates of developed countries in different age groups?"*. To help visualize our data, we created a violin plot with overlaying jitter in the hopes of giving a better idea on the distributions of data for each age group. To explore more closely, the 95% confidence intervals of the average unemployment rates for each age group give a better understanding of the differentiation of the means unemployment rates. 
+To conduct our analysis, we want to know if an individual's age has a significant effect on getting employed. In order to expand on that question, in this project, we studied the relationship between age groups and unemployment rates in developed countries in the past 5 years. The exploratory question that we will attempt to answer in this analysis is *"In the past 5 years, is there a difference in the unemployment rates of developed countries in different age groups?"*. To help visualize our data, we created a violin plot with overlaying jitter in the hopes of giving a better idea on the distributions of data for each age group. To explore more closely, the 95% confidence intervals of the average unemployment rates for each age group give a better understanding of the differentiation of the means unemployment rates. 
 To answer this question we will use ANOVA to see if the selected age groups differ. Depending on the results of the ANOVA, further analysis using pairwise t-tests will be conducted to explore exactly which age groups differ from one another.
 
 ## Data:
@@ -34,6 +34,6 @@ Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"
 
 •    R & R libraries:  
 o    rmarkdown  
-o    knit  
+o    knitr  
 o    tidyverse  
 o    ggplot2  
