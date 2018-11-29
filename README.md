@@ -23,10 +23,10 @@ Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unem
 2.    Run the following commands:
 
 ```
-Rscript src/01_clean-data.R "data/unemployment-age-gender.csv" "data/unemployment-age-gender-countries-filtered-clean.csv"  
-Rscript src/02_visualize-data.R "data/unemployment-age-gender-countries-filtered-clean.csv" "img/"  
-Rscript src/03_anova.R  "data/unemployment-age-gender-countries-filtered-clean.csv" "results/anova-table.csv"  
-Rscript src/04_pairwise-ttest.R  "data/unemployment-age-gender-countries-filtered-clean.csv" "results/pairwise-test-table.csv"  
+Rscript src/01_clean-data.R data/unemployment-age-gender.csv data/unemployment-age-gender-countries-filtered-clean.csv 
+Rscript src/02_visualize-data.R data/unemployment-age-gender-countries-filtered-clean.csv img/
+Rscript src/03_anova.R  data/unemployment-age-gender-countries-filtered-clean.csv results/anova-table.csv  
+Rscript src/04_pairwise-ttest.R  data/unemployment-age-gender-countries-filtered-clean.csv results/pairwise-test-table.csv  
 Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"  
 ```
 
