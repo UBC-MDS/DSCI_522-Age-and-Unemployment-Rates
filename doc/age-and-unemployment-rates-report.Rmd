@@ -71,7 +71,7 @@ The table shows a p-value of ~0.0 (1.645731e-102 when calculating).  Using a cri
 Evaluating the confidence interval of each group, it is evidence there is little to no overlap between the groups as displayed in figure 2. 
 
 ```{r echo=FALSE, out.width='70%', fig.width=7,fig.height=6}
-knitr::include_graphics('../img/mean_CI.png')
+knitr::include_graphics('../img/mean-CI.png')
 ```
 
 ###### Figure 2: Mean unemployment rate for age groups 15-24, 25-54, 55-64. Error bars represent 95% confidence intervals generated using Asymptotic Theory. 

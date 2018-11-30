@@ -4,10 +4,14 @@
 # Simon Chiu
 # November 22, 2018
 #
-# PURPOSE: This script takes the dataset in the data directory and will clean  and filter it. 
+# PURPOSE: This script takes the dataset in the data directory and will clean and filter it. 
+#          It first loads the data and then filters out develloping countries. It selects 
+#          only the necessary age groups since "total" and "15-64" are not organized. 
+#          It selects only columns "COU", "Country", "Age.Group", "Time", "Sex" and "Value".
+#          Next it writes a new CSV with a new name containing cleaned data.  
 # 
 # METHOD:  This script takes 2 arguments: one taking the raw data file name and the other 
-#          assigning a name to the newly cleaned CSV
+#          assigning a name to the newly cleaned CSV.
 #
 # OUTPUTS: unemployment-age-gender-countries-filtered-clean.csv
 #
@@ -35,10 +39,11 @@ print(head(data))
 
 
 # filters out developing  countries
-excluding_countries = c("Brazil", "Russia", "Mexico", "India", "Indonesia", "South Africa", "Turkey", "OECD - Average", 
+excluding_countries = c("Brazil", "Russia", "Mexico", "India", "Indonesia", 
+                        "South Africa", "Turkey", "OECD - Average", 
                         "China (People's Republic of)", "Colombia", "Costa Rica")
 
-# cleaned toselect only the necessary columns and filtered out the 2 unnecessary age groups 
+# cleaned to select only the necessary columns and filtered out the 2 unnecessary age groups 
 clean_unemployment <- data %>% select(COU, Country, Age.Group, Time, Sex, Value) %>%
   arrange(Country, Time, Age.Group) %>%
   filter( Age.Group == "15-24" | Age.Group=="25-54"| Age.Group=="55-64", Time >= '2012') %>%
