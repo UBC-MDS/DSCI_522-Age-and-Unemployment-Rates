@@ -42,7 +42,7 @@ Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"
 In addition you can use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/run_all.sh) script or use the [Makefile](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/Makefile)
 
 ## Procedure: 
-
+The procedure for generating the final report and all the associated files is shown below:
 
 
 ![](https://raw.githubusercontent.com/cheukman1207/DSCI_522-Age-and-Unemployment-Rates/master/img/flow_chart.png)
