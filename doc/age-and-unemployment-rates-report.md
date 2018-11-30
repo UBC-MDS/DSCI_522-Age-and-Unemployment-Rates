@@ -17,7 +17,7 @@ Dataset
 
 Our dataset “Employment: Unemployment rate by sex and age group” was obtained from by www.OECD.org. The data was organized by country, year and age group and filtered using only 5 years in the range 2012-2016. The age groups used for this analysis are separated into 3 categories; ages 15-24, 25-54 and 54-64. This was simply chosen because the dataset used was presented in this way. Due to the nature of the question addressing the mean unemployment rates of only developed countries, we omitted developing countries (See Reference \#1). One item to note is that male and female unemployment rates for each country and year are taken as 2 separate observations and are viewed as equally important. Below is an example of the clean dataset we based our analysis on and the variables addressed.
 
-###### Table 1: Dataset used in Age and Unemployment Rate analysis showing variables
+###### Table 1: Dataset used in Age and Unemployment Rate analysis showing variables and examples of observations
 
 | COU | Country   | Age.Group |  Time| Sex   |  Value|
 |:----|:----------|:----------|-----:|:------|------:|
@@ -32,7 +32,7 @@ The values of unemployment rates for the different age group vary substantially 
 
 <img src="../img/violin.png" width="70%" />
 
-###### Figure 1: Violin with Overlaying Jitter plots showing how the data is distributed for each age group
+###### Figure 1: Violin with Overlaying Jitter plots showing how the data is distributed for each age group where each jitter point represents a single observation.
 
 Findings
 --------
@@ -45,7 +45,7 @@ To begin the analysis we first must perform ANOVA to answer our hypothesis quest
 
 ANOVA produced the following results:
 
-###### Table 2: ANOVA results for Age Group and unemployment rates
+###### Table 2: ANOVA results for Age Group and unemployment rates showing
 
 | term      |    df|     sumsq|       meansq|  statistic|  p.value|
 |:----------|-----:|---------:|------------:|----------:|--------:|
