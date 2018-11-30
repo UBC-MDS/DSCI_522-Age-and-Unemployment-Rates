@@ -39,13 +39,13 @@ in addition you can use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Gen
 ## Procedure: 
 
 
-![]("insert link here")
 
+![](insert link here)
 
 
 
 ## Dependencies:
 
-•    R & R libraries:  (version 3.5.1 )
-o    [tidyverse](https://github.com/tidyverse)
-o    [ggplot2] (https://github.com/tidyverse/ggplot2)
+ R & R libraries:  (version 3.5.1 )   
+ - [tidyverse](https://github.com/tidyverse)  
+ - [ggplot2](https://github.com/tidyverse/ggplot2)  
