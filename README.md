@@ -34,7 +34,7 @@ Rscript src/04_pairwise-ttest.R  data/unemployment-age-gender-countries-filtered
 Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"  
 
 ```
-in addition you can use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/run_all.sh) script or use the [Makefile](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/Makefile)
+In addition you can use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/run_all.sh) script or use the [Makefile](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/Makefile)
 
 ## Procedure: 
 
