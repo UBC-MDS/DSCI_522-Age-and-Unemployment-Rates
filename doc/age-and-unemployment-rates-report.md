@@ -45,7 +45,7 @@ To begin the analysis we first must perform ANOVA to answer our hypothesis quest
 
 ANOVA produced the following results:
 
-###### Table 2: ANOVA results for Age Group and unemployment rates showing
+###### Table 2: ANOVA results for age group and unemployment rates using a critical value of 0.05
 
 | term      |    df|     sumsq|       meansq|  statistic|  p.value|
 |:----------|-----:|---------:|------------:|----------:|--------:|
@@ -60,13 +60,13 @@ The table shows a p-value of ~0.0 (1.645731e-102 when calculating). Using a crit
 
 Evaluating the confidence interval of each group, it is evidence there is little to no overlap between the groups as displayed in figure 2.
 
-<img src="../img/mean_CI.png" width="70%" />
+<img src="../img/mean-CI.png" width="70%" />
 
-###### Figure 2: Confidence Intervals of Mean Unemployment Rates of the 3 Age Groups
+###### Figure 2: Mean unemployment rate for age groups 15-24, 25-54, 55-64. Error bars represent 95% confidence intervals generated using Asymptotic Theory.
 
 Performing 3 separate tests produced the values in Table 3, showing Figure 2 confidence interval predictions correct.
 
-###### Table 3: Pair-wise T-Test for Each Pair of Age Groups.
+###### Table 3: Pair-wise T-Test for each age group comparison using a critical value of 0.05 to Reject or fail to Reject the Null hypothesis.
 
 | Age.group.1 | Age.group.2 |    p.value| reject\_H0 |
 |:------------|:------------|----------:|:-----------|

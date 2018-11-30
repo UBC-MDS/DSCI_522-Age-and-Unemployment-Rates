@@ -11,7 +11,7 @@
 #         (unemployment-age-gender-countries-filtered-clean.csv) and the other naming the 
 #         directory for the newly created figures
 # 
-# OUTPUTS: histrogram.png, violin.png, mean_CI.png 
+# OUTPUTS: histrogram.png, violin.png, mean-CI.png 
 #
 # USAGE: Rscript 02_visualize-data.R
 #
@@ -53,7 +53,7 @@ main <- function(){
   ggsave("violin.png", plot = violin, path = out_pic_dir,
          width = 4.5, height = 4.5)
   
-  ggsave("mean_CI.png", plot = mean_CI_plot, path = out_pic_dir,
+  ggsave("mean-CI.png", plot = mean_CI_plot, path = out_pic_dir,
          width = 4.5, height = 4.5)
 }
 
