@@ -2,6 +2,14 @@
 # Hayley Boyce
 # Simon Chiu
 # November 27, 2018
+#
+# PURPOSE: This script takes all the scripts and creates a markdown report on the analysis.
+#
+# METHOD:  This script takes no arguments
+#
+# USAGE: make all
+#				 make clean
+
 
 all: doc/age-and-unemployment-rates-report.md
 
@@ -20,7 +28,7 @@ results/anova-table.csv: data/unemployment-age-gender-countries-filtered-clean.c
 #4 The 04_pairwise-ttest.R  Rscript that outputs an estimate-table csv  and  pairwise-test-table csv
 results/estimate-table.csv results/pairwise-test-table.csv: data/unemployment-age-gender-countries-filtered-clean.csv src/04_pairwise-ttest.R
 	Rscript src/04_pairwise-ttest.R  data/unemployment-age-gender-countries-filtered-clean.csv results/pairwise-test-table.csv
-	
+
 #5  Creates the md report
 doc/age-and-unemployment-rates-report.md: doc/age-and-unemployment-rates-report.Rmd data/unemployment-age-gender-countries-filtered-clean.csv img/mean_CI.png img/histrogram.png img/violin.png results/anova-table.csv results/pairwise-test-table.csv
 	Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"
