@@ -5,7 +5,7 @@
 # November 22, 2018
 #
 # PURPOSE: This script takes the dataset in the data directory and will clean and filter it. 
-#          It first loads the data and then filters out develloping countries. It selects 
+#          It first loads the data and then filters out developing countries. It selects 
 #          only the necessary age groups since "total" and "15-64" are not organized. 
 #          It selects only columns "COU", "Country", "Age.Group", "Time", "Sex" and "Value".
 #          Next it writes a new CSV with a new name containing cleaned data.  
