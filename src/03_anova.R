@@ -4,15 +4,21 @@
 # Simon Chiu
 # November 22, 2018
 #
-# PURPOSE: This script takes the clean dataset in the data directory and performs ANOVA tests on the `Age.Group` values. 
+# PURPOSE: This script takes the clean dataset in the data directory and performs ANOVA 
+#          tests on the `Age.Group` values. 
 # 
-# METHOD: This script takes 2 arguments: one taking the clean data (nemployment-age-gender-countries-filtered-clean.csv) file made fromm script 
-# 01_clean-data.R and the other names the newly created ANOVA table.
-# 
+# METHOD: This script takes 2 arguments: one taking the clean data 
+#         (nemployment-age-gender-countries-filtered-clean.csv) file made fromm script 
+#         01_clean-data.R and the other names the newly created ANOVA table.
+#
+# OUTPUT: anova-table.csv
+#
 # USAGE: Rscript 03_anova.R
 # 
-# RECOMMENDED: bash Rscript src/03_anova.R  "data/unemployment-age-gender-countries-filtered-clean.csv" "results/anova-table.csv"
-
+# RECOMMENDED: bash Rscript src/03_anova.R  
+#                           data/unemployment-age-gender-countries-filtered-clean.csv
+#                           results/anova-table.csv"
+#
 
 library(tidyverse)
 

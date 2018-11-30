@@ -3,15 +3,20 @@
 # Hayley Boyce
 # Simon Chiu
 # November 22, 2018
-
+#
 # PURPOSE: This script takes the dataset in the data directory and will clean  and filter it. 
 # 
-# METHOD:  This script takes 2 arguments: one taking the raw data file name and the other assigning a name to the newly cleaned CSV
-# 
+# METHOD:  This script takes 2 arguments: one taking the raw data file name and the other 
+#          assigning a name to the newly cleaned CSV
+#
+# OUTPUTS: unemployment-age-gender-countries-filtered-clean.csv
+#
 # USAGE: Rscript 01_clean-data.R
 #
-# RECOMMENDED:  bash Rscript src/01_clean-data.R "data/unemployment-age-gender.csv" "data/unemployment-age-gender-countries-filtered-clean.csv"
-
+# RECOMMENDED:  bash Rscript src/01_clean-data.R 
+#                            data/unemployment-age-gender.csv 
+#                            data/unemployment-age-gender-countries-filtered-clean.csv
+#
 
 library(tidyverse)
 
