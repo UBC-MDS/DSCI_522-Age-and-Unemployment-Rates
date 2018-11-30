@@ -27,20 +27,25 @@ Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unem
 2.    Run the following commands:
 
 ```
+#1 Import data and perform data wrangling
 Rscript src/01_clean-data.R data/unemployment-age-gender.csv data/unemployment-age-gender-countries-filtered-clean.csv 
+#2  Create explanatory visualization
 Rscript src/02_visualize-data.R data/unemployment-age-gender-countries-filtered-clean.csv img/
+#3  Perform ANOVA
 Rscript src/03_anova.R  data/unemployment-age-gender-countries-filtered-clean.csv results/anova-table.csv  
-Rscript src/04_pairwise-ttest.R  data/unemployment-age-gender-countries-filtered-clean.csv results/pairwise-test-table.csv  
+#4  Perform pairwise T-tests
+Rscript src/04_pairwise-ttest.R  data/unemployment-age-gender-countries-filtered-clean.csv results/pairwise-test-table.csv 
+#5  Creates the final report
 Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"  
-
 ```
+
 In addition you can use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/run_all.sh) script or use the [Makefile](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/Makefile)
 
 ## Procedure: 
 
 
 
-![](insert link here)
+![]("img/flow_chart.png")
 
 
 
