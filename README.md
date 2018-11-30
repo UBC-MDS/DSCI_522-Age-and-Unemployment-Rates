@@ -45,8 +45,7 @@ In addition you can use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Gen
 The procedure for generating the final report and all the associated files is shown below:
 
 
-![](https://raw.githubusercontent.com/cheukman1207/DSCI_522-Age-and-Unemployment-Rates/master/img/flow_chart.png)
-
+![](https://raw.githubusercontent.com/cheukman1207/DSCI_522-Age-and-Unemployment-Rates/master/img/flow-chart.png)
 
 
 ## Dependencies:
@@ -54,3 +53,8 @@ The procedure for generating the final report and all the associated files is sh
  R & R libraries:  (version 3.5.1 )   
  - [tidyverse](https://github.com/tidyverse)  
  - [ggplot2](https://github.com/tidyverse/ggplot2)  
+ 
+## Report: 
+
+The report the Analysis can be found here: [/doc/age-and-unemployment-rates-report.md](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/doc/age-and-unemployment-rates-report.md)
+ 
