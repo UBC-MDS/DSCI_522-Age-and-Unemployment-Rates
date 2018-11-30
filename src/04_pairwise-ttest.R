@@ -4,16 +4,22 @@
 # Simon Chiu
 # November 22, 2018
 #
-# PURPOSE: This script takes the clean dataset in the data directory and performs 3 pairwise t-tests on the `Age.Group` values to see exactly
-# which age groups differs from each other.
+# PURPOSE: This script takes the clean dataset in the data directory and performs 3 pairwise t-tests 
+#          on the `Age.Group` values to see exactly which age groups differs from each other.
 # 
-# METHOD: This script takes 2 arguments: one taking the clean data (unemployment-age-gender-countries-filtered-clean.csv") file made fromm script 
-# 01_clean-data.R and the other names the newly created pairwise t-test table with conclusions if we reject or fail to reject the null hypothesis.
+# METHOD: This script takes 2 arguments: one taking the clean data 
+#         (unemployment-age-gender-countries-filtered-clean.csv") file made fromm script 01_clean-data.R   
+#         and the other names the newly created pairwise t-test table with conclusions if we reject or  
+#         fail to reject the null hypothesis.
 # 
+# OUTPUT: estimate-table.csv, pairwise-test-table
+#
 # USAGE: Rscript 04_pairwise-ttest.R
 #
-
-# RECOMMENDED:  bash Rscript src/04_pairwise-ttest.R  "data/unemployment-age-gender-countries-filtered-clean.csv" "results/pairwise-test-table.csv"
+# RECOMMENDED:  bash Rscript src/04_pairwise-ttest.R  
+#                            data/unemployment-age-gender-countries-filtered-clean.csv
+#                            results/pairwise-test-table.csv
+#
 
 library(tidyverse)
 
