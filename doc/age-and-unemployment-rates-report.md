@@ -8,14 +8,14 @@ The Relationship Between Unemployment Rate and Age Among Developed Countries
 
 In a short 7 months, students from the UBC MDS program will be leaving the comfort of school routine and entering the busy job market. Unlike most graduate programs, students enrolled in MDS come from many different countries and backgrounds. One of the beautiful things about this program is the vast age range of the students in the program. This topic of thought brought up the following research question:
 
-     "Is there a difference in mean unemployment rates of developed countries in different age groups?"
+     " For developed countries in the past 5 years, is there a difference in the mean unemployment rates in different age groups?"
 
 Although we hope that every person in this program has a high likelihood of employment once graduated, we were curious if age had an effect on the unemployment rate of a country on a large scale.
 
 Dataset
 -------
 
-Our dataset “Employment: Unemployment rate by sex and age group” was obtained from by www.OECD.org. The data was organized by country, year and age group and filtered using only 5 years in the range 2012-2016. The age groups used for this analysis are separated into 3 categories; ages 15-24, 25-54 and 54-64. This was simply chosen because the dataset used was presented in this way. Due to the nature of the question addressing the mean unemployment rates of only developed countries, we omitted developing countries (See Reference \#1). One item to note is that male and female unemployment rates for each country and year are taken as 2 separate observations. Below is an example of the clean dataset we based our analysis on and the variables addressed.
+Our dataset “Employment: Unemployment rate by sex and age group” was obtained from by www.OECD.org. The data was organized by country, year and age group and filtered using only 5 years in the range 2012-2016. The age groups used for this analysis are separated into 3 categories; ages 15-24, 25-54 and 54-64. This was simply chosen because the dataset used was presented in this way. Due to the nature of the question addressing the mean unemployment rates of only developed countries, we omitted developing countries (See Reference \#1). One item to note is that male and female unemployment rates for each country and year are taken as 2 separate observations and are viewed as equally important. Below is an example of the clean dataset we based our analysis on and the variables addressed.
 
 ###### Table 1: Dataset used in Age and Unemployment Rate analysis showing variables
 
@@ -28,22 +28,16 @@ Our dataset “Employment: Unemployment rate by sex and age group” was obtaine
 | AUS | Australia | 55-64     |  2012| Men   |    3.7|
 | AUS | Australia | 55-64     |  2012| Women |    3.1|
 
-The values of unemployment rates for the different age group vary substantially in distribution. The maximum and minimum unemployment rate of age group 15-24 is 63.8% and 4.5% respectively, with a median unemployment rate of 16.55%. The age group 25-54 has a maximum unemployment of 30.9% a minimum rate of 2.2 with a median of 6.05%. The last age group 55-64 has maximum and minimum values of 20.4% and 0% respectively with a median unemployment rate of 5.4%. This can be seen more directly in the histogram below.
-
-<img src="../img/histrogram.png" width="100%" />
-
-###### Figure 1: histograms of age group unemployment rates
-
-To see how much the rates differ in comparison to each individual age group the violin jitter plot is provided below. It is very evident by comparing the shape of the violin plot how much the data for each age group varies.
+The values of unemployment rates for the different age group vary substantially in distribution. The maximum and minimum unemployment rate of age group 15-24 is 63.8% and 4.5% respectively, with a median unemployment rate of 16.55%. The age group 25-54 has a maximum unemployment of 30.9% a minimum rate of 2.2 with a median of 6.05%. The last age group 55-64 has maximum and minimum values of 20.4% and 0% respectively with a median unemployment rate of 5.4%. To see how much the rates differ in comparison to each individual age group the violin jitter plot is provided below. It is very evident by comparing the shape of the violin plot how much the data for each age group varies.
 
 <img src="../img/violin.png" width="70%" />
 
-###### Figure 2: Violin with Overlaying Jitter plots showing how the data is distributed for each age group
+###### Figure 1: Violin with Overlaying Jitter plots showing how the data is distributed for each age group
 
 Findings
 --------
 
-To begin the analysis we first must perform ANOVA to answer our hypothesis question "Is there a difference in mean unemployment rates of developed countries in different age groups?". For this test, our 2 hypotheses are as follows:
+To begin the analysis we first must perform ANOVA to answer our hypothesis question " Iis there a difference in the mean unemployment rates in different age groups??". For this test, our 2 hypotheses are as follows:
 
 > Null hypothesis: The mean unemployment rates across all age groups are equal.
 >
@@ -64,13 +58,13 @@ The table shows a p-value of ~0.0 (1.645731e-102 when calculating). Using a crit
 >
 > Alternative hypothesis: Age group 1 and age group 2 do not have equal mean unemployment rates.
 
-Evaluating the confidence interval of each group, it is evidence there is little to no overlap between the groups as displayed in figure 3.
+Evaluating the confidence interval of each group, it is evidence there is little to no overlap between the groups as displayed in figure 2.
 
 <img src="../img/mean_CI.png" width="70%" />
 
-###### Figure 3: Confidence Intervals of Mean Unemployment Rates of the 3 Age Groups
+###### Figure 2: Confidence Intervals of Mean Unemployment Rates of the 3 Age Groups
 
-Performing 3 separate tests produced the values in Table 3, showing Figure 3 confidence interval predictions correct.
+Performing 3 separate tests produced the values in Table 3, showing Figure 2 confidence interval predictions correct.
 
 ###### Table 3: Pair-wise T-Test for Each Pair of Age Groups.
 
@@ -90,7 +84,7 @@ As much as we hoped that all mean unemployment rates were equal after performing
 Assumptions
 -----------
 
-In order to apply the ANOVA, we are assuming that the following conditions are satisified. First of all, all of our samples are independent of each other. Secondly, the variances between different age groups are assumed to be equal. thirdly, the residuals should be normally distributed. To be able to use anova and pairwise t-tests we need to assume our data and residuals are normally distributed. Lastly, we are assuming that male and female observations are equally important in our studies.
+In order to apply the ANOVA, we are assuming that the following conditions are satisified. First of all, all of our samples are independent of each other. Secondly, the variances between different age groups are assumed to be equal. thirdly, to be able to use anova and pairwise t-tests we need to assume our data and residuals are normally distributed. Lastly, we are assuming that male and female observations are equally important in our studies.
 
 Limitations
 -----------
