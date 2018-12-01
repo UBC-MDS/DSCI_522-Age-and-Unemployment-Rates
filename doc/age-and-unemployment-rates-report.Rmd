@@ -41,8 +41,7 @@ knitr::kable(D)
 ```
 
 
-The values of unemployment rates for the different age group vary substantially in distribution. The maximum and minimum unemployment rate of age group 15-24 is 63.8% and 4.5% respectively, with a median unemployment rate of 16.55%. The age group 25-54 has a maximum unemployment of 30.9% a minimum rate of 2.2 with a median of 6.05%. The last age group 55-64 has maximum and minimum values of 20.4% and 0% respectively with a median unemployment rate of 5.4%. To see how much the rates differ in comparison to each individual age group the violin jitter plot is provided below. It is very evident by comparing the shape of the violin plot how much the data for each age group varies. 
-
+The values of unemployment rates for the different age group vary substantially in distribution. The maximum and minimum unemployment rate of age group 15-24 is 63.8% and 4.5% respectively, with a median unemployment rate of 16.55%. The age group 25-54 has a maximum unemployment of 30.9% a minimum rate of 2.2 with a median of 6.05%. The last age group 55-64 has maximum and minimum values of 20.4% and 0% respectively with a median unemployment rate of 5.4%. These statistics give a good representation of exactly how wide each distribution is. A point of interests is that the max value for unemployment among the age group 15-24 is more than double that of age group 25-54 and triple the max unemployment rate of group  55-64. This explains how much more variability there is in the data in the young age group compared to the others. To see how much the unemployment rates differ in comparison to each individual age group the violin jitter plot is provided below. It is very evident by comparing the shape of the violin plot how much the data for each age group varies. 
 
 ```{r echo=FALSE, out.width='70%', fig.width=7,fig.height=6}
 knitr::include_graphics('../img/violin.png')

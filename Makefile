@@ -2,9 +2,9 @@
 # Hayley Boyce
 # Simon Chiu
 # November 27, 2018
-#
+# 
 # PURPOSE: This script takes all the scripts and creates a markdown report on the analysis.
-#
+# 
 # METHOD:  This script takes no arguments
 #
 # USAGE: make all
