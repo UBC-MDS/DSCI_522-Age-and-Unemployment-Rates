@@ -98,7 +98,7 @@ The table above shows that all three t-tests produced p values that are lower th
 As much as we hoped that all mean unemployment rates were equal after performing an ANOVA test and followed up with 3 pairwise t-tests, we can confirm quite confidently that all three age groups are not equal and are all different from each other.  One finding that particularly stood out was how much higher the age group 15-24 was when compared to the other 2. This was not a surprise; however, it was not an ideal result in terms of expectations in society.
 
 ## Assumptions
-In order to apply the ANOVA, we are assuming that the following conditions are satisified. First of all, all of our samples are independent of each other. Secondly, the variances between different age groups are assumed to be equal. thirdly, to be able to use anova and pairwise t-tests we need to assume our data and residuals are normally distributed. 
+In order to apply the ANOVA, we are assuming that the following conditions are satisified. First of all, all of our samples are independent of each other. Secondly, the variances between different age groups are assumed to be equal. Thirdly, to be able to use anova and pairwise t-tests we need to assume our data and residuals are normally distributed. 
 Lastly, we are assuming that male and female observations are equally important in our studies.
 
 ## Limitations

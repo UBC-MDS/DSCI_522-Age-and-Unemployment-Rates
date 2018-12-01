@@ -151,7 +151,7 @@ terms of expectations in society.
 In order to apply the ANOVA, we are assuming that the following
 conditions are satisified. First of all, all of our samples are
 independent of each other. Secondly, the variances between different age
-groups are assumed to be equal. thirdly, to be able to use anova and
+groups are assumed to be equal. Thirdly, to be able to use anova and
 pairwise t-tests we need to assume our data and residuals are normally
 distributed. Lastly, we are assuming that male and female observations
 are equally important in our studies.
