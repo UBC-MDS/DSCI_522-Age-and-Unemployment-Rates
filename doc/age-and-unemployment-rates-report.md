@@ -176,8 +176,8 @@ reproduce the analysis with a finer age group separations.
 ## References
 
   - List of Developed Countries
-    <https://en.wikipedia.org/wiki/Developed_country>, section: World
-    Bank high-income economies
+    <https://en.wikipedia.org/wiki/Developed_country> (section: World
+    Bank high-income economies)
   - Dataset <https://stats.oecd.org/index.aspx?queryid=54743>
   - Gender Unemployment Gap by Stefania Albanesi, Aysegul Sahin
     <https://voxeu.org/article/gender-unemployment-gap>
