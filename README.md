@@ -23,38 +23,104 @@ Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unem
 
 ## Usage:
 
-1.    Please clone this repo, and locate yourself to the root of where this project is saved.
-2.    Run the following commands:
+To reproduce our analysis please do the following: 
+
+1. Clone this repo, and locate yourself to the root of where this project is saved.
+
+2. You may choose to use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/run_all.sh) script in your bash with:
+
+``` 
+bash run_all.sh
+```
+
+  Or use the [Makefile](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/Makefile) with the following command to make all the files needed for the analysis and creates the report: 
+
+```
+make all
+```
+
+to clean and delete and the files created from the scripts you can use command:
+
+```
+make clean
+```
+
+The run_all.sh and Makefile consists of the the following commands:
 
 ```
 #1 Import data and perform data wrangling
 Rscript src/01_clean-data.R data/unemployment-age-gender.csv data/unemployment-age-gender-countries-filtered-clean.csv 
+
 #2  Create explanatory visualization
 Rscript src/02_visualize-data.R data/unemployment-age-gender-countries-filtered-clean.csv img/
+
 #3  Perform ANOVA
-Rscript src/03_anova.R  data/unemployment-age-gender-countries-filtered-clean.csv results/anova-table.csv  
+Rscript src/03_anova.R  data/unemployment-age-gender-countries-filtered-clean.csv results/anova-table.csv 
+
 #4  Perform pairwise T-tests
-Rscript src/04_pairwise-ttest.R  data/unemployment-age-gender-countries-filtered-clean.csv results/pairwise-test-table.csv 
+Rscript src/04_pairwise-ttest.R  data/unemployment-age-gender-countries-filtered-clean.csv results/pairwise-test-table.csv
+
 #5  Creates the final report
 Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"  
 ```
 
-In addition you can use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/run_all.sh) script or use the [Makefile](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/Makefile)
 
 ## Procedure: 
-The procedure for generating the final report and all the associated files is shown below:
+The procedure for generating the final report and all the associated files is shown below and includes a discriptive flowchart:
 
+Script 1- [01_clean-data.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/src/01_clean-data.R): 
+
+- **Inputs**: data/unemployment-age-gender.csv    
+
+- **Purpose**: This script takes the raw data  and will clean and filter it. 
+
+- **Outputs**:  unemployment-age-gender-countries-filtered-clean.csv   
+
+Script 2 - [02_visualize-data.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/src/02_visualize-data.R): 
+
+- **Inputs**: unemployment-age-gender-countries-filtered-clean.csv
+
+- **Purpose**: This script creates exploratory visualizations for target audiences. 
+
+- **Outputs**:  histrogram.png, violin.png, mean-CI.png 
+
+Script 3 - [03_anova.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/src/03_anova.R): 
+
+- **Inputs**: unemployment-age-gender-countries-filtered-clean.csv
+
+- **Purpose**: This script takes the performs ANOVA tests on the `Age.Group` values. 
+
+- **Outputs**: anova-table.csv
+
+Script 4 - [04_pairwise-ttest.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/src/04_pairwise-ttest.R): 
+
+- **Inputs**: unemployment-age-gender-countries-filtered-clean.csv
+
+- **Purpose**: This script creates a pairwise t-test table with conclusions explaining if we reject or  
+# fail to reject the null hypothesis.
+
+- **Outputs**:  confidence-interval-estimate-table.csv, pairwise-test-table.csv
 
 ![](https://raw.githubusercontent.com/cheukman1207/DSCI_522-Age-and-Unemployment-Rates/master/img/flow-chart.png)
+
 
 
 ## Dependencies:
 
  R & R libraries:  (version 3.5.1 )   
+ 
  - [tidyverse](https://github.com/tidyverse)  
  - [ggplot2](https://github.com/tidyverse/ggplot2)  
+ - [broom](https://github.com/tidymodels/broom)
+ - [dplyr](https://github.com/tidyverse/dpylr)
  
 ## Report: 
 
 The report the Analysis can be found here: [/doc/age-and-unemployment-rates-report.md](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/doc/age-and-unemployment-rates-report.md)
+
+## Releases:
+
+- [v0.1](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/releases/tag/v0.1)
+- [V2.0](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/releases/tag/V2.0)
+- [V3.0](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/releases/tag/V3.0)
  

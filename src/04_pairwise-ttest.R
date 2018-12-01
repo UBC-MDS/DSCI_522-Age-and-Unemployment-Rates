@@ -12,7 +12,7 @@
 #         and the other names the newly created pairwise t-test table with conclusions if we reject or  
 #         fail to reject the null hypothesis.
 # 
-# OUTPUT: results/confidence-interval-estimate-table.csv, pairwise-test-table
+# OUTPUT: confidence-interval-estimate-table.csv, pairwise-test-table.csv
 #
 # USAGE: Rscript 04_pairwise-ttest.R
 #
