@@ -8,7 +8,7 @@
 # METHOD:  This script takes no arguments
 #
 # USAGE: make all
-#				 make clean
+#	make clean
 
 
 all: doc/age-and-unemployment-rates-report.md
