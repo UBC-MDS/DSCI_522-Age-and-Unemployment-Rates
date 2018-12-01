@@ -64,7 +64,7 @@ main <- function(){
   colnames(pairwise_test)[colnames(pairwise_test)=="group2"] <- "Age.group.2"  
   
   # Write new CSV  
-  write.csv(rate_estimate, "results/estimate-table.csv",row.names=FALSE)
+  write.csv(rate_estimate, "results/confidence-interval-estimate-table.csv",row.names=FALSE)
   write.csv(pairwise_test, out,row.names=FALSE )
 }
 # call main function
