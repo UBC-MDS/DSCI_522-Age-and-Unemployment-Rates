@@ -27,7 +27,7 @@ To reproduce our analysis please do the following:
 
 1. Clone this repo, and locate yourself to the root of where this project is saved.
 
-2. You may choose to use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Gender-and-Age-World-Unemployment-Rates-/blob/master/run_all.sh) script in your bash with:
+2. You may choose to use the [run_all.sh](https://github.com/hfboyce/DSCI_522-Age-and-Unemployment-Rates/blob/master/run_all.sh) script in your bash with:
 
 ``` 
 bash run_all.sh
@@ -39,13 +39,13 @@ bash run_all.sh
 make all
 ```
 
-to clean and delete and the files created from the scripts you can use command:
+To delete all the files created from the scripts you can use the command:
 
 ```
 make clean
 ```
 
-The run_all.sh and Makefile consists of the the following commands:
+The run_all.sh and Makefile consist of the the following commands:
 
 ```
 #1 Import data and perform data wrangling
@@ -96,8 +96,7 @@ Script 4 - [04_pairwise-ttest.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Une
 
 - **Inputs**: unemployment-age-gender-countries-filtered-clean.csv
 
-- **Purpose**: This script creates a pairwise t-test table with conclusions explaining if we reject or  
-# fail to reject the null hypothesis.
+- **Purpose**: This script creates a pairwise t-test table with conclusions explaining if we reject or fail to reject the null hypothesis.
 
 - **Outputs**:  confidence-interval-estimate-table.csv, pairwise-test-table.csv
 
