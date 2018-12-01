@@ -29,6 +29,12 @@ data <- read.csv("../data/unemployment-age-gender-countries-filtered-clean.csv")
 D=head(data)
 ```
 
+The following is a list of variables that are being used for this analysis.
+
+1. Value (Unemployment Rates), numeric variable
+2. Time (Year 2012 and on), numberic variable
+3. Age.Group (15-24, 25-54, 55-64), categorical variable
+
 ###### Table 1: Dataset used in Age and Unemployment Rate analysis showing variables and examples of observations 
 ```{r echo=FALSE}
 knitr::kable(D)
@@ -47,7 +53,7 @@ knitr::include_graphics('../img/violin.png')
 
 ## Findings
 
-To begin the analysis we first must perform ANOVA to answer our hypothesis question " Iis there a difference in the mean unemployment rates in different age groups??".  For this test, our 2 hypotheses are as follows:  
+To begin the analysis we first must perform ANOVA to answer our hypothesis question " Is there a difference in the mean unemployment rates in different age groups??".  For this test, our 2 hypotheses are as follows:  
 
 > Null hypothesis: The mean unemployment rates across all age groups are equal.  
 >
@@ -79,7 +85,7 @@ knitr::include_graphics('../img/mean-CI.png')
 
 Performing 3 separate tests produced the values in Table 3, showing Figure 2 confidence interval predictions correct. 
 
-###### Table 3: Pair-wise T-Test for each age group comparison using a critical value of 0.05 to Reject or fail to Reject the Null hypothesis. 
+###### Table 3: Pair-wise T-Test for each age group comparison using a critical value of 0.05 to reject or fail to reject the Null hypothesis. 
 
 ```{r echo = FALSE}
 pair <- read.csv("../results/pairwise-test-table.csv")
