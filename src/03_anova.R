@@ -17,7 +17,7 @@
 # 
 # RECOMMENDED: bash Rscript src/03_anova.R  
 #                           data/unemployment-age-gender-countries-filtered-clean.csv
-#                           results/anova-table.csv"
+#                           results/anova-table.csv
 #
 
 library(tidyverse)
