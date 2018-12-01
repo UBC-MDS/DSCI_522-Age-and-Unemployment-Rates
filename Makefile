@@ -25,8 +25,8 @@ img/mean-CI.png img/histrogram.png img/violin.png: data/unemployment-age-gender-
 results/anova-table.csv: data/unemployment-age-gender-countries-filtered-clean.csv src/03_anova.R
 	Rscript src/03_anova.R  data/unemployment-age-gender-countries-filtered-clean.csv results/anova-table.csv
 
-#4 The 04_pairwise-ttest.R  Rscript that outputs an estimate-table csv  and  pairwise-test-table csv
-results/estimate-table.csv results/pairwise-test-table.csv: data/unemployment-age-gender-countries-filtered-clean.csv src/04_pairwise-ttest.R
+#4 The 04_pairwise-ttest.R  Rscript that outputs an results/confidence-interval-estimate-table csv  and  pairwise-test-table csv
+results/confidence-interval-estimate-table.csv results/pairwise-test-table.csv: data/unemployment-age-gender-countries-filtered-clean.csv src/04_pairwise-ttest.R
 	Rscript src/04_pairwise-ttest.R  data/unemployment-age-gender-countries-filtered-clean.csv results/pairwise-test-table.csv
 
 #5  Creates the md report
@@ -41,6 +41,6 @@ clean:
 	rm -f img/histrogram.png
 	rm -f img/violin.png
 	rm -f results/anova-table.csv
-	rm -f results/estimate-table.csv
+	rm -f results/confidence-interval-estimate-table.csv
 	rm -f results/pairwise-test-table.csv
 	rm -f doc/age-and-unemployment-rates-report.html
