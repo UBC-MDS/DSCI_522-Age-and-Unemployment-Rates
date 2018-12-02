@@ -28,9 +28,9 @@ Greece,	Hungary, Iceland,	Ireland, Israel,	Italy,	Japan,	Korea,	Latvia, Lithuani
 Poland,	Portugal,	Slovak Republic, Slovenia,	Spain, Sweden,	Switzerland, United Kingdom,	United States,
 
 - Variables/factors: 
-     * Value (Unemployment Rates), numeric variable
-     * Time (Year 2012 and on), numberic variable
-     * Age.Group (15-24, 25-54, 55-64), categorical variable
+     * Value (Unemployment Rates): numeric variable
+     * Time (Year 2012 and on): numeric variable
+     * Age.Group (15-24, 25-54, 55-64): categorical variable
 
 ## Usage:
 
@@ -77,11 +77,12 @@ Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"
 
 
 ## Procedure: 
-The procedure for generating the final report and all the associated files is shown below and includes a discriptive flowchart:
+
+The procedure for generating the final report and all the associated files is shown below. For reference a flowchart has been included:
 
 Script 1- [01_clean-data.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/src/01_clean-data.R): 
 
-- **Inputs**: data/unemployment-age-gender.csv    
+- **Inputs**: unemployment-age-gender.csv    
 
 - **Purpose**: This script takes the raw data  and will clean and filter it. 
 

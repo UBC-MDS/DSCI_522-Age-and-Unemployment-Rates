@@ -31,9 +31,9 @@ D=head(data)
 
 The following is a list of variables that are being used for this analysis.
 
-1. Value (Unemployment Rates), numeric variable
-2. Time (Year 2012 and on), numberic variable
-3. Age.Group (15-24, 25-54, 55-64), categorical variable
+1. Value (Unemployment Rates): numeric variable
+2. Time (Year 2012 and on): numeric variable
+3. Age.Group (15-24, 25-54, 55-64): categorical variable
 
 ###### Table 1: Dataset used in Age and Unemployment Rate analysis showing variables and examples of observations 
 ```{r echo=FALSE}
