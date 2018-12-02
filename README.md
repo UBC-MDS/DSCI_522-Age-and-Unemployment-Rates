@@ -19,31 +19,17 @@ To answer this question we will use ANOVA to see if the selected age groups diff
 ## Data:
 
 Dataset: [Employment: Unemployment rate by sex and age group](https://stats.oecd.org/index.aspx?queryid=54743) by OECD.org.   
-Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/data) directory of this repository. From this data we are using the following information. 
-
-- Variables/factors for data wrangling: 
+Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/data) directory of this repository.   
+From the data we are using the following information: 
 
 | Variable Name | Description | Type |
 | --- | --- | --- |
 | Years | 2012-2016 | Discrete |
-| Countries | A list of 34 countries | Categorical |
-
-| List of selected countries: |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- |
-| Australia | Austria | Belgium | Canada |	Chile | Czech Republic |
-| Denmark |	Estonia | Finland |	France | Germany | Greece|
-| Hungary | Iceland |	Ireland | Israel |	Italy |	Japan |
-| Korea |	Latvia | Lithuania |	Luxembourg |	Netherlands | New Zealand |
-| Norway | Poland |	Portugal |	Slovak Republic | Slovenia |	Spain |
-| Sweden |	Switzerland | United Kingdom |	United States|
-
-
-- Variables/factors for analysis: 
-
-| Variable Name | Description | Type |
-| --- | --- | --- |
+| Countries | 34 countries | Categorical |
 | Value | Unemployment Rates | Numeric |
 | Age.Group | 15-24, 25-54 or 55-64 | Categorical |
+
+
 
 ## Usage:
 

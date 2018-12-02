@@ -15,13 +15,15 @@ Although we hope that every person in this program has a high likelihood of empl
 Dataset
 -------
 
-Our dataset “Employment: Unemployment rate by sex and age group” was obtained from by www.OECD.org. The data was organized by country, year and age group and filtered using only 5 years in the range 2012-2016. The age groups used for this analysis are separated into 3 categories; ages 15-24, 25-54 and 54-64. This was simply chosen because the dataset used was presented in this way. Due to the nature of the question addressing the mean unemployment rates of only developed countries, we omitted developing countries (See Reference \#1). One item to note is that male and female unemployment rates for each country and year are taken as 2 separate observations and are viewed as equally important. Below is an example of the clean dataset we based our analysis on and the variables addressed.
+Our dataset “Employment: Unemployment rate by sex and age group” was obtained from by www.OECD.org. The data was organized by country, year and age group and filtered using only 5 years in the range 2012-2016. The age groups used for this analysis are separated into 3 categories; ages 15-24, 25-54 and 54-64. This was simply chosen because the dataset used was presented in this way. Due to the nature of the question addressing the mean unemployment rates of only developed countries, we omitted developing countries (See Reference \#1). The list of countries used from the dataset can be found in Appendix A1. One item to note is that male and female unemployment rates for each country and year are taken as 2 separate observations and are viewed as equally important.
 
 The following is a list of variables that are being used for this analysis.
 
-1.  Value (Unemployment Rates), numeric variable
-2.  Time (Year 2012 and on), numberic variable
-3.  Age.Group (15-24, 25-54, 55-64), categorical variable
+1.  Value (Unemployment Rates): numeric variable
+2.  Time (Years 2012-2016): numeric variable
+3.  Age.Group (15-24, 25-54, 55-64): categorical variable
+
+Below is an example of the clean dataset we based our analysis on and the variables addressed.
 
 ###### Table 1: Dataset used in Age and Unemployment Rate analysis showing variables and examples of observations
 
@@ -34,7 +36,7 @@ The following is a list of variables that are being used for this analysis.
 | AUS | Australia | 55-64     |  2012| Men   |    3.7|
 | AUS | Australia | 55-64     |  2012| Women |    3.1|
 
-The values of unemployment rates for the different age group vary substantially in distribution. The maximum and minimum unemployment rate of age group 15-24 is 63.8% and 4.5% respectively, with a median unemployment rate of 16.55%. The age group 25-54 has a maximum unemployment of 30.9% a minimum rate of 2.2 with a median of 6.05%. The last age group 55-64 has maximum and minimum values of 20.4% and 0% respectively with a median unemployment rate of 5.4%. To see how much the rates differ in comparison to each individual age group the violin jitter plot is provided below. It is very evident by comparing the shape of the violin plot how much the data for each age group varies.
+The values of unemployment rates for the different age group vary substantially in distribution. The maximum and minimum unemployment rate of age group 15-24 is 63.8% and 4.5% respectively, with a median unemployment rate of 16.55%. The age group 25-54 has a maximum unemployment of 30.9% a minimum rate of 2.2 with a median of 6.05%. The last age group 55-64 has maximum and minimum values of 20.4% and 0% respectively with a median unemployment rate of 5.4%. These statistics give a good representation of exactly how wide each distribution is. A point of interests is that the max value for unemployment among the age group 15-24 is more than double that of age group 25-54 and triple the max unemployment rate of group 55-64. This explains how much more variability there is in the data in the young age group compared to the others. To see how much the unemployment rates differ in comparison to each individual age group the violin jitter plot is provided below. It is very evident by comparing the shape of the violin plot how much the data for each age group varies.
 
 <img src="../img/violin.png" width="70%" />
 
@@ -108,3 +110,17 @@ References
 -   List of Developed Countries <https://en.wikipedia.org/wiki/Developed_country> (section: World Bank high-income economies)
 -   Dataset <https://stats.oecd.org/index.aspx?queryid=54743>
 -   Gender Unemployment Gap by Stefania Albanesi, Aysegul Sahin <https://voxeu.org/article/gender-unemployment-gap>
+
+Appendix:
+---------
+
+###### Table A1: The complete list of all the countries used in this analysis
+
+| Selected countries: |             |                |                 |             |                |
+|---------------------|-------------|----------------|-----------------|-------------|----------------|
+| Australia           | Austria     | Belgium        | Canada          | Chile       | Czech Republic |
+| Denmark             | Estonia     | Finland        | France          | Germany     | Greece         |
+| Hungary             | Iceland     | Ireland        | Israel          | Italy       | Japan          |
+| Korea               | Latvia      | Lithuania      | Luxembourg      | Netherlands | New Zealand    |
+| Norway              | Poland      | Portugal       | Slovak Republic | Slovenia    | Spain          |
+| Sweden              | Switzerland | United Kingdom | United States   |             |
