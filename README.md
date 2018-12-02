@@ -122,7 +122,6 @@ Script 4 - [04_pairwise-ttest.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Une
  - [tidyverse](https://github.com/tidyverse)  
  - [ggplot2](https://github.com/tidyverse/ggplot2)  
  - [broom](https://github.com/tidymodels/broom)
- - [dplyr](https://github.com/tidyverse/dpylr)
  
 ## Report: 
 
