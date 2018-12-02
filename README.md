@@ -28,8 +28,8 @@ Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unem
 | Years | 2012-2016 | Discrete |
 | Countries | A list of 34 countries | Categorical |
 
-| List of selected countries: |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- |
+| List of selected countries: |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
 | Australia | Austria | Belgium | Canada |	Chile | Czech Republic |
 | Denmark |	Estonia | Finland |	France | Germany | Greece|
 | Hungary | Iceland |	Ireland | Israel |	Italy |	Japan |
