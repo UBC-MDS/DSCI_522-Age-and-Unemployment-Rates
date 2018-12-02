@@ -20,7 +20,8 @@ Although we hope that every person in this program has a high likelihood of empl
 
 ## Dataset 
 
-Our dataset “Employment: Unemployment rate by sex and age group” was obtained from by www.OECD.org. The data was organized by country, year and age group and filtered using only 5 years in the range 2012-2016. The age groups used for this analysis are separated into 3 categories; ages 15-24, 25-54 and 54-64. This was simply chosen because the dataset used was presented in this way. Due to the nature of the question addressing the mean unemployment rates of only developed countries, we omitted developing countries (See Reference #1). One item to note is that male and female unemployment rates for each country and year are taken as 2 separate observations and are viewed as equally important. Below is an example of the clean dataset we based our analysis on and the variables addressed. 
+Our dataset “Employment: Unemployment rate by sex and age group” was obtained from by www.OECD.org. The data was organized by country, year and age group and filtered using only 5 years in the range 2012-2016. The age groups used for this analysis are separated into 3 categories; ages 15-24, 25-54 and 54-64. This was simply chosen because the dataset used was presented in this way. Due to the nature of the question addressing the mean unemployment rates of only developed countries, we omitted developing countries (See Reference #1).
+The list of countries used from the dataset can be found in Appendix A1. One item to note is that male and female unemployment rates for each country and year are taken as 2 separate observations and are viewed as equally important. Below is an example of the clean dataset we based our analysis on and the variables addressed. 
 
 
 
@@ -32,7 +33,7 @@ D=head(data)
 The following is a list of variables that are being used for this analysis.
 
 1. Value (Unemployment Rates): numeric variable
-2. Time (Year 2012 and on): numeric variable
+2. Time (Years 2012-2016): numeric variable
 3. Age.Group (15-24, 25-54, 55-64): categorical variable
 
 ###### Table 1: Dataset used in Age and Unemployment Rate analysis showing variables and examples of observations 
@@ -118,5 +119,16 @@ https://stats.oecd.org/index.aspx?queryid=54743
 https://voxeu.org/article/gender-unemployment-gap
 
 
+## Appendix: 
 
+###### Table A1: The complete list of all the countries used in this analysis
+
+| Selected countries: |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| Australia | Austria | Belgium | Canada |	Chile | Czech Republic |
+| Denmark |	Estonia | Finland |	France | Germany | Greece|
+| Hungary | Iceland |	Ireland | Israel |	Italy |	Japan |
+| Korea |	Latvia | Lithuania |	Luxembourg |	Netherlands | New Zealand |
+| Norway | Poland |	Portugal |	Slovak Republic | Slovenia |	Spain |
+| Sweden |	Switzerland | United Kingdom |	United States|
 
