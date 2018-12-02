@@ -30,12 +30,12 @@ Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unem
 
 | List of selected countries: |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| | Australia | Austria | Belgium | Canada |	Chile | Czech Republic |
-| | Denmark |	Estonia | Finland |	France | Germany | Greece|
-| | Hungary | Iceland |	Ireland | Israel |	Italy |	Japan |
-| | Korea |	Latvia | Lithuania |	Luxembourg |	Netherlands | New Zealand |
-| | Norway | Poland |	Portugal |	Slovak Republic | Slovenia |	Spain |
-| | Sweden |	Switzerland | United Kingdom |	United States|
+| Australia | Austria | Belgium | Canada |	Chile | Czech Republic |
+| Denmark |	Estonia | Finland |	France | Germany | Greece|
+| Hungary | Iceland |	Ireland | Israel |	Italy |	Japan |
+| Korea |	Latvia | Lithuania |	Luxembourg |	Netherlands | New Zealand |
+| Norway | Poland |	Portugal |	Slovak Republic | Slovenia |	Spain |
+| Sweden |	Switzerland | United Kingdom |	United States|
 
 
 - Variables/factors for analysis: 
