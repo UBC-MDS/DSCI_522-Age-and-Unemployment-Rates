@@ -19,7 +19,18 @@ To answer this question we will use ANOVA to see if the selected age groups diff
 ## Data:
 
 Dataset: [Employment: Unemployment rate by sex and age group](https://stats.oecd.org/index.aspx?queryid=54743) by OECD.org.   
-Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/data) directory of this repository. 
+Also can be found in the [data](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/tree/master/data) directory of this repository. From this data we are using the following information. 
+
+- Years: (5 in total) 2012-2016. 
+
+- Countries: (34 in total) Australia, Austria, Belgium, Canada,	Chile, Czech Republic, Denmark,	Estonia, Finland,	France, Germany, 
+Greece,	Hungary, Iceland,	Ireland, Israel,	Italy,	Japan,	Korea,	Latvia, Lithuania,	Luxembourg,	Netherlands, New Zealand,	Norway,
+Poland,	Portugal,	Slovak Republic, Slovenia,	Spain, Sweden,	Switzerland, United Kingdom,	United States,
+
+- Variables/factors: 
+     * Value (Unemployment Rates), numeric variable
+     * Time (Year 2012 and on), numberic variable
+     * Age.Group (15-24, 25-54, 55-64), categorical variable
 
 ## Usage:
 
