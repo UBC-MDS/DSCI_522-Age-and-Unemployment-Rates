@@ -11,7 +11,4 @@
 # use rocker/tidyverse as the base image
 FROM rocker/tidyverse
 
-# install R packages
-RUN Rscript -e "install.packages('dplyr')"
-RUN Rscript -e "install.packages('ggplot2')"
-RUN Rscript -e "install.packages('broom')"
+
