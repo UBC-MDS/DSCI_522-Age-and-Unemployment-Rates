@@ -51,6 +51,7 @@ clean_unemployment <- data %>% select(COU, Country, Age.Group, Time, Sex, Value)
 
 #Write new CSV
 write.csv(clean_unemployment, out, row.names=FALSE)
+print(sessionInfo())
 }
 
 # call main function
