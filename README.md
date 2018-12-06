@@ -55,7 +55,26 @@ To delete all the files created from the scripts you can use the command:
 make clean
 ```
 
-The run_all.sh and Makefile consist of the the following commands:
+  Or use the [Dockerfile](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/Dockerfile) with the following commands:
+  
+To create the Docker image:
+
+```
+docker build --tag age-and-unemployment-rates:0.1 .
+```
+To make all the files needed for the analysis and creates the report: (PATH_ON_YOUR_COMPUTER refers to the root of where the project is saved)
+
+```
+docker run --rm -v PATH_ON_YOUR_COMPUTER:/Age-and-Unemployment-Rates age-and-unemployment-rates:0.1 make -C '/Age-and-Unemployment-Rates' all
+```
+
+To delete all the files created from the scripts you can use the command:
+
+```
+docker run --rm -v PATH_ON_YOUR_COMPUTER:/Age-and-Unemployment-Rates age-and-unemployment-rates:0.1 make -C '/Age-and-Unemployment-Rates' clean
+```
+
+The Dockerfile, run_all.sh and Makefile consist of the the following commands:
 
 ```
 #1 Import data and perform data wrangling
