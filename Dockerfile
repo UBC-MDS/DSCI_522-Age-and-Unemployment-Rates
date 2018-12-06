@@ -4,9 +4,9 @@
 #Dec 6th, 2018
 
 # Usage:
-#   Building the docker image: docker build --tag age-and-unemployment-rates:0.1 .
-#		Creating the report: docker run --rm -v PATH_ON_YOUR_COMPUTER:/Age-and-Unemployment-Rates age-and-unemployment-rates:0.1 make -C '/Age-and-Unemployment-Rates' all
-#		Cleaning the report: docker run --rm -v PATH_ON_YOUR_COMPUTER:/Age-and-Unemployment-Rates age-and-unemployment-rates:0.1 make -C '/Age-and-Unemployment-Rates' clean
+#   Pulling the docker image from DockerHub: docker pull hfboyce/dsci_522-age-and-unemployment-rates
+#		Creating the report: docker run --rm -v PATH_ON_YOUR_COMPUTER:/Age-and-Unemployment-Rates hfboyce/dsci_522-age-and-unemployment-rates:latest make -C '/Age-and-Unemployment-Rates' all
+#		Cleaning the report: docker run --rm -v PATH_ON_YOUR_COMPUTER:/Age-and-Unemployment-Rates hfboyce/dsci_522-age-and-unemployment-rates:latest make -C '/Age-and-Unemployment-Rates' clean
 
 # use rocker/tidyverse as the base image
 FROM rocker/tidyverse
