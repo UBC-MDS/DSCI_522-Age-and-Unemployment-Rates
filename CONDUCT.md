@@ -4,30 +4,30 @@
 
 ### Our Pledge
 In order to advance in the creation of knowledge and promoting collaborative, open source work environments, as contributors and maintainers of this project, we are committed to fostering an open and welcoming environment for all people who contribute.
-We pledge to make participation in this project a harassment-free experience, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation. We believe in a kind, safe and welcoming environment where people are not fearful to contribute their ideas or be their true selves. 
+We pledge to make participation in this project a harassment-free experience, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation. We believe in a kind, safe and welcoming environment where people are not fearful to contribute their ideas or be their true selves.
 
 ### Our Standard
 The following are suggestions of encouraged behavior that will contribute to a positive, cohesive work environment :
 
-* Crediting other sources thoughts, words or ideas
-* the use of welcoming inclusive language
+* Giving credit to other sources' thoughts, words or ideas
+* Using welcoming inclusive language
 * Respecting differing viewpoints
 * Showing empathy in necessary circumstances
-* accepting constructive critiques and review
-* welcoming discussions and suggestions on how to better the community and project
-* being kind and open to new ideas and recommendations
+* Accepting constructive critiques and review
+* Welcoming discussions and suggestions on how to better the community and project
+* Being kind and open to new ideas and recommendations
 
 Unacceptable behavior will not be tolerated and participants may face temporary or permanent repercussions if deemed necessary.
 Unacceptable behavior includes but is not limited to the following:
 
-* The use of sexual language or imagery
+* Using sexual language or imagery
 * Derogatory comments or personal attacks
 * Demeaning or condescending language
 * Bullying
 * Public or private harassment
 * insults, curses, or name calling  of any sort
 * Any form of action that makes any individual feel unsafe or fearful.
-* Other unprofessional conduct.
+* Any other form of unprofessional conduct
 
 ### Our Responsibilities
 Project maintainers  have the right and responsibility to the following:
