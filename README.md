@@ -140,7 +140,7 @@ Script 4 - [04_pairwise-ttest.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Une
 
 - **Outputs**:  confidence-interval-estimate-table.csv, pairwise-test-table.csv
 
-![](https://raw.githubusercontent.com/cheukman1207/DSCI_522-Age-and-Unemployment-Rates/master/img/Makefile.png)
+![](https://github.com/hfboyce/DSCI_522-Age-and-Unemployment-Rates/blob/master/img/Makefile.png)
 
 
 ## Dependencies:
