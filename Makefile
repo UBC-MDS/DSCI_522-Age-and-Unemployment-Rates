@@ -11,7 +11,7 @@
 #	make clean
 
 
-all: doc/age-and-unemployment-rates-report.md 
+all: doc/age-and-unemployment-rates-report.md
 
 #1.The 01_clean-data.R  Rscript that outputs a clean data csv
 data/unemployment-age-gender-countries-filtered-clean.csv: data/unemployment-age-gender.csv src/01_clean-data.R
@@ -33,6 +33,12 @@ results/confidence-interval-estimate-table.csv results/pairwise-test-table.csv: 
 doc/age-and-unemployment-rates-report.md: doc/age-and-unemployment-rates-report.Rmd data/unemployment-age-gender-countries-filtered-clean.csv img/mean-CI.png img/histrogram.png img/violin.png results/anova-table.csv results/pairwise-test-table.csv
 	Rscript -e "rmarkdown::render('doc/age-and-unemployment-rates-report.Rmd')"
 
+	# step 6. generate dependency diagram (Note: The diagram will not be generated using Make)
+Makefile.png: Makefile
+		makefile2graph > Makefile.dot
+		dot -Tpng Makefile.dot -o Makefile.png
+
+# Create the
 clean:
 	rm -f data/unemployment-age-gender-countries-filtered-clean.csv
 	rm -f img/mean-CI.png
@@ -42,3 +48,5 @@ clean:
 	rm -f results/confidence-interval-estimate-table.csv
 	rm -f results/pairwise-test-table.csv
 	rm -f doc/age-and-unemployment-rates-report.html
+	rm -f makefile.dot
+	rm -f makefile.png 
