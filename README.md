@@ -33,7 +33,7 @@ From the data we are using the following information:
 
 ## Usage:
 
-To reproduce our analysis you have a choice to reproduce this analysis with or without docker.
+To reproduce our analysis you have a choice to do so with or without docker depending on if you want to install the dependencies on your own accord. To avoid installing them, we have conveniently provided a docker option. 
 
 ### With Docker (no need to download dependencies)
 
