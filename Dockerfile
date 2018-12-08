@@ -1,7 +1,7 @@
 # Docker file for DSCI_522-Age-and-Unemployment-Rates
 # Simon Chiu
 # Hayley Boyce
-#Dec 6th, 2018
+# Dec 6th, 2018
 
 # Usage:
 #   Pulling the docker image from DockerHub: docker pull hfboyce/dsci_522-age-and-unemployment-rates
