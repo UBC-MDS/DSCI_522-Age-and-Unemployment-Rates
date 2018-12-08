@@ -40,7 +40,7 @@ To reproduce our analysis you have a choice to reproduce this analysis with or w
 1. Download and login to [docker](https://www.docker.com/get-started)
 2. Download/clone this repo, and locate yourself to the root of where this project is saved.
 
-3. Create the Docker image pull our image from [docker hub](https://hub.docker.com/r/hfboyce/dsci_522-age-and-unemployment-rates/) with following command:
+3. Create the Docker image pull our image from [docker hub](https://hub.docker.com/r/hfboyce/dsci_522-age-and-unemployment-rates/) with the following command:
 
 ```
 docker pull hfboyce/dsci_522-age-and-unemployment-rates
@@ -84,7 +84,7 @@ To delete all the files created from the scripts you can use the command:
 make clean
 ```
 
-The run_all.sh and Makefile consist of the the following commands:
+The run_all.sh and Makefile consist of the following commands:
 
 ```
 #1 Import data and perform data wrangling
@@ -160,3 +160,4 @@ The report the Analysis can be found here: [/doc/age-and-unemployment-rates-repo
 - [v0.1](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/releases/tag/v0.1)
 - [V2.0](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/releases/tag/V2.0)
 - [V3.0](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/releases/tag/V3.0)
+- [V4.0](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/releases/tag/V4.0)

@@ -23,7 +23,7 @@ Unacceptable behavior includes but is not limited to the following:
 * Demeaning or condescending language
 * Bullying
 * Public or private harassment
-* insults, curses, or name calling  of any sort
+* Insults, curses, or name calling of any sort
 * Any form of action that makes any individual feel unsafe or fearful.
 * Any other form of unprofessional conduct
 
