@@ -147,9 +147,9 @@ Script 4 - [04_pairwise-ttest.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Une
 
  R & R libraries:  (version 3.5.1 )   
 
- - [tidyverse](https://github.com/tidyverse)  
- - [ggplot2](https://github.com/tidyverse/ggplot2)  
- - [broom](https://github.com/tidymodels/broom)
+ - [tidyverse](https://github.com/tidyverse)  (version 1.2.1)
+ - [ggplot2](https://github.com/tidyverse/ggplot2)(version 3.1.0)  
+ - [broom](https://github.com/tidymodels/broom) (version 3.1.0)
 
 ## Report:
 
