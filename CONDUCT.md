@@ -1,7 +1,5 @@
 # Contributor Code of Conduct
 
-# Contributor Code of Conduct
-
 ### Our Pledge
 In order to advance in the creation of knowledge and promoting collaborative, open source work environments, as contributors and maintainers of this project, we are committed to fostering an open and welcoming environment for all people who contribute.
 We pledge to make participation in this project a harassment-free experience, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation. We believe in a kind, safe and welcoming environment where people are not fearful to contribute their ideas or be their true selves.
