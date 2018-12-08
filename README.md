@@ -40,7 +40,7 @@ To reproduce our analysis you have a choice to reproduce this analysis with or w
 1. Download and login to [docker](https://www.docker.com/get-started)
 2. Download/clone this repo, and locate yourself to the root of where this project is saved.
 
-3. Create the Docker image pull our image from [docker hub](https://hub.docker.com/r/hfboyce/dsci_522-age-and-unemployment-rates/) with the following command:
+3. Create the Docker image by pulling our image from [docker hub](https://hub.docker.com/r/hfboyce/dsci_522-age-and-unemployment-rates/) with the following command:
 
 ```
 docker pull hfboyce/dsci_522-age-and-unemployment-rates
@@ -60,7 +60,6 @@ docker run --rm -v PATH_ON_YOUR_COMPUTER:/Age-and-Unemployment-Rates hfboyce/dsc
 
 
 ### Without Docker
-To reproduce our analysis please do the following:
 
 1. Clone this repo, and locate yourself to the root of where this project is saved.
 
@@ -78,7 +77,7 @@ bash run_all.sh
 make all
 ```
 
-To delete all the files created from the scripts you can use the command:
+4. To delete all the files created from the scripts you can use the command:
 
 ```
 make clean
@@ -141,7 +140,7 @@ Script 4 - [04_pairwise-ttest.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Une
 - **Outputs**:  confidence-interval-estimate-table.csv, pairwise-test-table.csv
 
 ![](https://github.com/hfboyce/DSCI_522-Age-and-Unemployment-Rates/blob/master/img/Makefile.png)
-
+###### Figure 1: Diagram Showing the workflow of this analysis
 
 ## Dependencies:
 
@@ -153,7 +152,7 @@ Script 4 - [04_pairwise-ttest.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Une
 
 ## Report:
 
-The report the Analysis can be found here: [/doc/age-and-unemployment-rates-report.md](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/doc/age-and-unemployment-rates-report.md)
+The report the analysis can be found here: [/doc/age-and-unemployment-rates-report.md](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/doc/age-and-unemployment-rates-report.md)
 
 ## Releases:
 
