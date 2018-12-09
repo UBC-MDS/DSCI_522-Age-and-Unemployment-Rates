@@ -152,7 +152,7 @@ Script 4 - [04_pairwise-ttest.R](https://github.com/UBC-MDS/DSCI_522-Age-and-Une
 
 ## Report:
 
-The report the analysis can be found here: [/doc/age-and-unemployment-rates-report.md](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/doc/age-and-unemployment-rates-report.md)
+The report of this analysis can be found here: [Age and Unemployment Rates Report](https://github.com/UBC-MDS/DSCI_522-Age-and-Unemployment-Rates/blob/master/doc/age-and-unemployment-rates-report.md)
 
 ## Releases:
 
