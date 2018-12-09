@@ -15,7 +15,7 @@ Although we hope that every person in this program has a high likelihood of empl
 Dataset
 -------
 
-Our dataset “Employment: Unemployment rate by sex and age group” was obtained from by www.OECD.org. The data was organized by country, year and age group and filtered using only 5 years in the range 2012-2016. The age groups used for this analysis are separated into 3 categories; ages 15-24, 25-54 and 54-64. This was simply chosen because the dataset used was presented in this way. Due to the nature of the question addressing the mean unemployment rates of only developed countries, we omitted developing countries (See Reference \#1). The list of countries used from the dataset can be found in Appendix A1. One item to note is that male and female unemployment rates for each country and year are taken as 2 separate observations and are viewed as equally important.
+Our dataset “Employment: Unemployment rate by sex and age group” was obtained from www.OECD.org. The data was organized by country, year and age group and filtered using only 5 years in the range 2012-2016. The age groups used for this analysis are separated into 3 categories; ages 15-24, 25-54 and 54-64. This was simply chosen because the dataset used was presented in this way. Due to the nature of the question addressing the mean unemployment rates of only developed countries, we omitted developing countries (See Reference \#1). The list of countries used from the dataset can be found in Appendix A1. One item to note is that male and female unemployment rates for each country and year are taken as 2 separate observations and are viewed as equally important.
 
 The following is a list of variables that are being used for this analysis.
 
@@ -36,7 +36,7 @@ Below is an example of the clean dataset we based our analysis on and the variab
 | AUS | Australia | 55-64     |  2012| Men   |    3.7|
 | AUS | Australia | 55-64     |  2012| Women |    3.1|
 
-The values of unemployment rates for the different age group vary substantially in distribution. The maximum and minimum unemployment rate of age group 15-24 is 63.8% and 4.5% respectively, with a median unemployment rate of 16.55%. The age group 25-54 has a maximum unemployment of 30.9% a minimum rate of 2.2 with a median of 6.05%. The last age group 55-64 has maximum and minimum values of 20.4% and 0% respectively with a median unemployment rate of 5.4%. These statistics give a good representation of exactly how wide each distribution is. A point of interests is that the max value for unemployment among the age group 15-24 is more than double that of age group 25-54 and triple the max unemployment rate of group 55-64. This explains how much more variability there is in the data in the young age group compared to the others. To see how much the unemployment rates differ in comparison to each individual age group the violin jitter plot is provided below. It is very evident by comparing the shape of the violin plot how much the data for each age group varies.
+The values of unemployment rates for the different age groups vary substantially in distribution. The maximum and minimum unemployment rate of age group 15-24 is 63.8% and 4.5% respectively, with a median unemployment rate of 16.55%. The age group 25-54 has a maximum unemployment rate of 30.9% and a minimum of 2.2 with a median of 6.05%. The last age group 55-64 has maximum and minimum values of 20.4% and 0% respectively with a median unemployment rate of 5.4%. These statistics give a good representation of exactly how wide each distribution is. A point of interests is that the max value for unemployment among the age group 15-24 is more than double that of age group 25-54 and triple the max unemployment rate of group 55-64. This explains how much more variability there is in the data in the young age group compared to the others. To see how much the unemployment rates differ in comparison to each individual age group, the violin jitter plot is provided below. It is very evident by comparing the shape of the violin plot how much the data for each age group varies.
 
 <img src="../img/violin.png" width="70%" />
 
@@ -45,7 +45,7 @@ The values of unemployment rates for the different age group vary substantially 
 Findings
 --------
 
-To begin the analysis we first must perform ANOVA to answer our hypothesis question " Is there a difference in the mean unemployment rates in different age groups??". For this test, our 2 hypotheses are as follows:
+To begin the analysis we first must perform ANOVA to answer our hypothesis question " Is there a difference in the mean unemployment rates in different age groups??". For this test, our hypotheses are as follows:
 
 > Null hypothesis: The mean unemployment rates across all age groups are equal.
 >
@@ -53,14 +53,14 @@ To begin the analysis we first must perform ANOVA to answer our hypothesis quest
 
 ANOVA produced the following results:
 
-###### Table 2: ANOVA results for age group and unemployment rates using a critical value of 0.05
+###### Table 2: ANOVA results for age groups and unemployment rates using a critical value of 0.05
 
 | term      |    df|     sumsq|       meansq|  statistic|  p.value|
 |:----------|-----:|---------:|------------:|----------:|--------:|
 | Age.Group |     2|  34289.67|  17144.83395|   297.7235|        0|
 | Residuals |  1017|  58565.40|     57.58644|         NA|       NA|
 
-The table shows a p-value of ~0.0 (1.645731e-102 when calculating). Using a critical value of 0.05 shows strong evidence to reject the null hypothesis. This result produces the conclusion that all three age groups mean unemployment rate are not equal. Although successful in nature, this conclusion does not exactly answer what age groups differ among the three and we must perform further analysis to discover exactly which of the three groups are different from one another. This leads us to pair-wise t-testing. In order to find which age group's mean unemployment rates statistically differ, each pair of age groups must be compared using a t-test and new individual hypotheses.
+The table shows a p-value of ~0.0 (1.645731e-102 when calculating). Using a critical value of 0.05, this shows a strong evidence to reject the null hypothesis. This result produces the conclusion that the mean unemployment rate for the three age groups are not all equal. Although successful in nature, this conclusion does not exactly answer what age groups differ among the three and we must perform further analysis to discover exactly which of the three groups are different from one another. This leads us to pair-wise t-testing. In order to find which age group's mean unemployment rates statistically differ, each pair of age groups must be compared using a t-test and new individual hypotheses.
 
 > Null hypothesis: Age group 1 and age group 2 have equal mean unemployment rates.
 >
@@ -72,7 +72,7 @@ Evaluating the confidence interval of each group, it is evidence there is little
 
 ###### Figure 2: Mean unemployment rate for age groups 15-24, 25-54, 55-64. Error bars represent 95% confidence intervals generated using Asymptotic Theory.
 
-Performing 3 separate tests produced the values in Table 3, showing Figure 2 confidence interval predictions correct.
+Performing 3 separate tests produced the values in Table 3, results agree with the confidence intervals from Figure 2.
 
 ###### Table 3: Pair-wise T-Test for each age group comparison using a critical value of 0.05 to reject or fail to reject the Null hypothesis.
 
@@ -92,7 +92,7 @@ As much as we hoped that all mean unemployment rates were equal after performing
 Assumptions
 -----------
 
-In order to apply the ANOVA, we are assuming that the following conditions are satisified. First of all, all of our samples are independent of each other. Secondly, the variances between different age groups are assumed to be equal. Thirdly, to be able to use anova and pairwise t-tests we need to assume our data and residuals are normally distributed. Lastly, we are assuming that male and female observations are equally important in our studies.
+In order to apply the ANOVA, we are assuming that the following conditions are satisified. First of all, all of our samples are independent of each other. Secondly, the variances between different age groups are assumed to be equal. Thirdly, to be able to use anova and pairwise t-tests, we assume our data and residuals are normally distributed. Lastly, we are assuming that male and female observations are equally important in our studies.
 
 Limitations
 -----------
